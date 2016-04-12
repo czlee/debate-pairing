@@ -1,9 +1,5 @@
 using PyPlot
 
-ntournaments = 100
-nteams = 80
-nrounds = 4
-
 function runpairings!(points, pairings, strengths)
     for (t1, t2) in pairings
         if strengths[t2] > strengths[t1]
@@ -68,7 +64,6 @@ function simulatetournament(pairingfunction::Function, strengths, nrounds)
         runpairings!(points, pairings, strengths)
         brackets = groupbrackets(points)
     end
-    showbrackets(brackets)
     return brackets
 end
 
@@ -84,12 +79,3 @@ function simulatemanytournaments(pairingfunction::Function, ntournaments::Int, n
     end
     return positions
 end
-
-powerpositions = simulatemanytournaments(pairpower, ntournaments, nteams, nrounds)
-powerplot = boxplot(powerpositions)
-show()
-
-clf()
-randompositions = simulatemanytournaments(pairrandom, ntournaments, nteams, nrounds)
-randomplot = boxplot(randompositions)
-show()
