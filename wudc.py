@@ -17,18 +17,19 @@ DISALLOWED = munkres.DISALLOWED
 m = munkres.Munkres()
 
 
-def read_input_file(filename):
+def read_input_file(filename, include_all=False):
     """Reads an input file, returns a list of 3-tuples, (team, points, history).
     """
     f = open(filename)
     data = []
     for line in f:
         team, points, history, active = line.split("\t")
-        if int(active) == 0:
+        if not include_all and int(active) == 0:
             continue
         history = [int(x) for x in history.split(",")]
         data.append((team, int(points), history))
-    assert len(data) % 4 == 0
+    if not include_all:
+        assert len(data) % 4 == 0
     return data
 
 def define_rooms(points):
@@ -130,7 +131,8 @@ def show_rooms(rooms):
 def compare_badness(rooms, other_filename):
     """Compares the position badness implied by `data` and `indices`, to that
     stored in `other_filename`."""
-    other_histories = {team: history for team, _, history in read_input_file(other_filename)}
+    other_data = read_input_file(other_filename, include_all=True)
+    other_histories = {team: history for team, _, history in other_data}
     this_total = 0
     other_total = 0
     print("           team      ours      original")
@@ -148,7 +150,8 @@ def compare_badness(rooms, other_filename):
                 hist2=",".join(map(str, other_histories[team]))
             ))
 
-    print("ours total:", this_total, ", comparison total:", other_total)
+    print("       our total:", this_total)
+    print("comparison total:", other_total)
 
 def show_original_rooms(data, filename):
     properties = {team: (points, history) for team, points, history in data}
