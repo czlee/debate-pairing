@@ -1,0 +1,394 @@
+AKL A	6	1,0,1,0	1
+AUDS A	6	0,0,1,1	1
+Belgrade B	6	0,0,1,1	1
+Belgrade C	6	1,1,0,0	1
+CDS A	6	0,1,0,1	1
+Cambridge A	6	0,1,0,1	1
+Cambridge C	6	0,1,0,1	1
+Cambridge D	6	1,0,1,0	1
+Durham A	6	0,1,0,1	1
+Hart House A	6	0,0,1,1	1
+Hart House C	6	0,1,1,0	1
+McGill B	6	0,0,1,1	1
+NLSIU A	6	1,1,0,0	1
+Oxford A	6	1,1,0,0	1
+Oxford B	6	0,1,0,1	1
+Oxford C	6	0,0,1,1	1
+Tel Aviv B	6	0,1,0,1	1
+UADS A	6	0,1,0,1	1
+UCD LawSoc A	6	0,1,0,1	1
+USU B	6	1,0,1,0	1
+USU D	6	0,0,1,1	1
+USU F	6	0,0,1,1	1
+VUW B	6	0,1,0,1	1
+Vermont B	6	0,1,0,1	1
+ANU A	5	1,0,0,1	1
+Bard A	5	0,0,1,1	1
+Bates A	5	1,0,1,0	1
+Cambridge B	5	1,0,0,1	1
+Cornell A	5	0,1,0,1	1
+Cornell B	5	1,0,1,0	1
+DC Ms A	5	0,1,1,0	1
+Duke A	5	0,0,1,1	1
+Edinburgh A	5	1,0,0,1	1
+GUU A	5	0,0,1,1	1
+GWU A	5	0,1,0,1	1
+Harvard A	5	1,0,1,0	1
+Harvard C	5	0,1,0,1	1
+IIUM A	5	1,0,1,0	1
+Indonesia A	5	1,0,0,1	1
+KCL A	5	1,1,0,0	1
+LEIDEN B	5	0,1,0,1	1
+LEIDEN C	5	1,0,0,1	1
+LSE A	5	0,1,0,1	1
+LSE C	5	0,0,1,1	1
+MAD A	5	0,1,1,0	1
+MDS A	5	0,1,0,1	1
+MEDUNSA A	5	1,1,0,0	1
+MQU A	5	0,1,0,1	1
+Melbourne B	5	0,1,0,1	1
+Middlebury A	5	1,0,1,0	1
+Morehouse A	5	0,1,0,1	1
+NEU A	5	0,1,0,1	1
+NTU A	5	0,1,1,0	1
+NUS A	5	0,1,1,0	1
+Otago A	5	0,1,1,0	1
+St Andrews C	5	1,1,0,0	1
+TCD Phil A	5	0,1,0,1	1
+TCWM A	5	1,1,0,0	1
+Tel Aviv A	5	0,1,0,1	1
+UCC Phil A	5	0,1,1,0	1
+UCL B	5	1,1,0,0	1
+UNSW A	5	0,0,1,1	1
+UQDS B	5	1,1,0,0	1
+UQDS C	5	1,0,1,0	1
+USU C	5	1,1,0,0	1
+USU E	5	0,1,0,1	1
+UT MARA A	5	0,0,1,1	1
+UT Sydney A	5	1,1,0,0	1
+UWADU B	5	0,1,0,1	1
+Yale A	5	1,0,1,0	1
+Yale D	5	1,0,1,0	1
+ASAFA A	4	1,0,1,0	1
+Alaska A	4	0,0,1,1	1
+Alaska C	4	0,1,1,0	1
+Ateneo A	4	0,0,1,1	1
+BBU B	4	0,1,1,0	1
+BGU A	4	0,1,1,0	1
+BPP A	4	0,0,1,1	1
+Bates B	4	0,1,0,1	1
+Bates C	4	1,0,1,0	1
+Berkeley A	4	0,1,0,1	1
+Berlin A	4	1,1,0,0	1
+Brown A	4	1,0,1,0	1
+CDS B	4	0,1,1,0	1
+Carleton A	4	0,0,1,1	1
+Clemson A	4	1,0,0,1	1
+Durham B	4	0,0,1,1	1
+E.D.S A	4	1,1,0,0	1
+EDS UGM A	4	0,1,1,0	1
+GUU B	4	1,1,0,0	1
+HSE A	4	0,0,1,1	1
+HUJI A	4	0,0,1,1	1
+IIUM B	4	0,1,0,1	1
+Indonesia C	4	0,1,1,0	1
+LSE B	4	0,1,1,0	1
+Lund A	4	1,0,1,0	1
+MAD D	4	0,0,1,1	1
+Melbourne A	4	1,1,0,0	1
+Nazarbayev A	4	1,1,0,0	1
+Otago B	4	0,0,1,1	1
+Oxford D	4	0,1,1,0	1
+PEP A	4	0,1,0,1	1
+Penn A	4	0,0,1,1	1
+Princeton A	4	0,0,1,1	1
+Princeton C	4	1,0,1,0	1
+QUTDS A	4	1,1,0,0	1
+RRIS A	4	0,1,1,0	1
+SKT A	4	1,1,0,0	1
+SMU B	4	0,0,1,1	1
+SNUDA A	4	0,1,1,0	1
+SWORDS A	4	0,0,1,1	1
+Sodales A	4	0,1,0,1	1
+St Andrews A	4	1,0,1,0	1
+Stanford A	4	1,0,1,0	1
+Stanford B	4	1,1,0,0	1
+Stanford E	4	0,1,1,0	1
+Swarthmore A	4	1,1,0,0	1
+Swarthmore B	4	1,0,0,1	1
+TCD Hist A	4	1,0,0,1	1
+TCD Hist B	4	0,0,1,1	1
+TCD Phil B	4	1,0,1,0	1
+Tokyo A	4	0,1,1,0	1
+UBC B	4	0,1,1,0	1
+UCL A	4	0,1,0,1	1
+UCT A	4	1,0,0,1	1
+UChicago B	4	0,1,1,0	1
+UChicago C	4	1,0,0,1	1
+UFS A	4	0,0,1,1	1
+UNSW B	4	1,1,0,0	1
+URDU A	4	1,1,0,0	1
+USDV B	4	1,0,1,0	1
+USU A	4	1,0,0,1	1
+UT MARA B	4	1,0,1,0	1
+UVic A	4	0,0,1,1	1
+UWODS A	4	1,1,0,0	1
+UdeM A	4	0,1,0,1	1
+VUW A	4	1,0,0,1	1
+Vermont A	4	1,0,0,1	1
+WDU A	4	1,0,0,1	1
+YNC A	4	0,1,0,1	1
+YUU A	4	1,0,0,1	1
+ANU B	3	1,0,1,0	1
+ANU C	3	0,1,0,1	1
+APU A	3	1,1,0,0	1
+ASAFA B	3	1,0,1,0	1
+Alaska B	3	1,1,0,0	1
+Amherst A	3	1,0,1,0	1
+Amherst B	3	1,0,1,0	1
+BBU A	3	1,0,0,1	1
+BDS A	3	0,1,1,0	1
+BGU B	3	0,1,1,0	1
+BINUS A	3	1,0,0,1	1
+BIPEDS A	3	0,1,0,1	1
+BLCU A	3	0,1,0,1	1
+BUET A	3	1,0,0,1	1
+Belgrade A	3	1,1,0,0	1
+Brandeis A	3	1,0,0,1	1
+Brawijaya A	3	1,1,0,0	1
+CMUQ A	3	1,1,0,0	1
+CUHKEDT A	3	0,1,0,1	1
+Clemson B	3	0,1,1,0	1
+Cornell C	3	1,1,0,0	1
+Cornell D	3	1,0,0,1	1
+D U A	3	1,1,0,0	1
+DCBayreuth A	3	0,1,1,0	1
+DKWien A	3	0,1,0,1	1
+DLSU A	3	1,1,0,0	1
+DRUMS A	3	1,0,1,0	1
+Durham C	3	1,0,1,0	1
+EDS UGM B	3	0,1,0,1	1
+FDS B	3	0,0,1,1	1
+GSU A	3	0,1,0,1	1
+HKU B	3	1,1,0,0	1
+HKUST EDT A	3	1,1,0,0	1
+HWS A	3	0,1,1,0	1
+HWS B	3	0,1,0,1	1
+Hart House B	3	0,0,1,1	1
+Harvard B	3	1,0,0,1	1
+Hopkins A	3	1,1,0,0	1
+IDC A	3	1,1,0,0	1
+IITB A	3	1,0,1,0	1
+IIUM C	3	0,1,0,1	1
+ITB A	3	0,1,0,1	1
+IUT A	3	0,1,0,1	1
+KOREA A	3	1,1,0,0	1
+Keio A	3	1,0,1,0	1
+Koç A	3	1,1,0,0	1
+LEIDEN D	3	0,1,0,1	1
+LLC A	3	1,0,0,1	1
+MAD B	3	0,1,1,0	1
+MAD C	3	0,0,1,1	1
+MDS B	3	1,0,0,1	1
+MDU A	3	0,0,1,1	1
+MQU B	3	1,0,1,0	1
+McGill A	3	1,1,0,0	1
+McGill C	3	0,0,1,1	1
+Morehouse B	3	0,1,0,1	1
+NWU-PUKKE A	3	1,0,0,1	1
+OpenU A	3	0,1,1,0	1
+Point Loma A	3	1,1,0,0	1
+Princeton B	3	1,0,0,1	1
+QDU A	3	1,1,0,0	1
+QDU B	3	1,0,1,0	1
+SMU A	3	0,0,1,1	1
+SUFE B	3	0,1,0,1	1
+Sheff B	3	1,0,1,0	1
+Stanford C	3	1,0,0,1	1
+Stanford D	3	0,0,1,1	1
+Stanford F	3	0,1,0,1	1
+Stockholm A	3	1,0,1,0	1
+Swarthmore C	3	1,0,1,0	1
+TDS B	3	1,1,0,0	1
+Team 399	3	1,0,0,1	1
+Tilbury A	3	0,1,0,1	1
+UBC A	3	0,1,0,1	1
+UCD LawSoc B	3	1,1,0,0	1
+ULV B	3	0,1,0,1	1
+UMacau A	3	0,0,1,1	1
+UQDS A	3	0,0,1,1	1
+USDV A	3	0,1,1,0	1
+USMA A	3	0,1,0,1	1
+UWADU A	3	0,1,1,0	1
+UoB A	3	0,1,0,1	1
+UoG A	3	0,0,1,1	1
+UoN A	3	0,1,0,1	1
+Utrecht A	3	0,1,0,1	1
+Vermont C	3	0,1,0,1	1
+WSDU A	3	0,1,1,0	1
+Warsaw A	3	0,1,0,1	1
+Warwick A	3	0,0,1,1	1
+Yale B	3	0,1,1,0	1
+ZUD A	3	0,1,0,1	1
+A U B	2	1,1,0,0	1
+Aalto A	2	0,1,0,1	1
+Aberdeen A	2	1,0,1,0	1
+BFSU A	2	1,1,0,0	1
+BINUS B	2	1,0,1,0	1
+BRIS A	2	0,1,0,1	1
+Bauman A	2	0,1,1,0	1
+Berlin C	2	0,1,1,0	1
+Brandeis B	2	0,0,1,1	1
+Brown B	2	1,0,1,0	1
+CUNY A	2	0,0,1,1	1
+CUPB A	2	0,1,0,1	1
+CardiffUni A	2	1,0,1,0	1
+Clemson C	2	1,0,1,0	1
+DEREE A	2	1,1,0,0	1
+DKWien B	2	0,1,1,0	1
+DRUMS B	2	1,0,1,0	1
+E.D.S B	2	0,0,1,1	1
+ECP A	2	0,1,0,1	1
+FCC A	2	1,0,1,0	1
+FDS A	2	1,0,1,0	1
+FDU A	2	0,0,1,1	1
+GWU B	2	1,0,0,1	1
+HKU A	2	1,0,1,0	1
+HKUST EDT B	2	1,0,1,0	1
+Hit-u A	2	1,0,0,1	1
+IBA DU A	2	1,1,0,0	1
+Indonesia B	2	0,0,1,1	1
+KHDS A	2	0,0,1,1	1
+Keio B	2	1,0,1,0	1
+Kyoto A	2	0,1,0,1	1
+LEIDEN A	2	1,0,1,0	1
+Lund B	2	1,0,1,0	1
+Malaya A	2	1,1,0,0	1
+Melbourne C	2	1,0,1,0	1
+Middlebury B	2	1,0,1,0	1
+NSU A	2	1,0,1,0	1
+Nagoya A	2	1,0,1,0	1
+PCU A	2	0,0,1,1	1
+RRIS B	2	0,1,0,1	1
+Rosario A	2	0,1,0,1	1
+SIM A	2	1,0,1,0	1
+SUFE A	2	0,0,1,1	1
+SolBridge A	2	0,1,0,1	1
+St Andrews B	2	0,1,0,1	1
+Swing A	2	0,0,1,0	0
+Swing B	2	0,1,0,0	0
+TAMUQ A	2	1,1,0,0	1
+TDS A	2	0,0,1,1	1
+TKC A	2	1,0,1,0	1
+TUCN A	2	0,1,1,0	1
+Tampere A	2	1,0,1,0	1
+Taylor's A	2	1,0,1,0	1
+Team 400	2	1,0,1,0	1
+Tec CEM A	2	1,1,0,0	1
+Tec CEM B	2	1,1,0,0	1
+Titech A	2	1,0,1,0	1
+Tokyo B	2	0,1,0,1	1
+UAM A	2	1,0,0,1	1
+UCD LnH A	2	0,0,1,1	1
+UCL C	2	1,0,1,0	1
+UCT B	2	1,0,1,0	1
+UCV B	2	1,0,1,0	1
+UChicago A	2	0,0,1,1	1
+UFH A	2	1,0,1,0	1
+ULV A	2	1,0,1,0	1
+UTECH A	2	1,1,0,0	1
+UdeS A	2	0,1,1,0	1
+WSDU B	2	1,0,1,0	1
+Yale C	2	0,1,0,1	1
+Zagreb A	2	0,0,1,1	1
+wdebating A	2	0,1,0,1	1
+A U A	1	1,0,1,0	1
+BOGUN A	1	0,0,1,1	1
+BUET B	1	0,1,1,0	1
+Bates D	1	1,0,0,1	1
+Comillas A	1	0,0,1,1	1
+DCB A	1	1,1,0,0	1
+DCGA A	1	1,0,0,1	1
+DKWien C	1	0,1,0,1	1
+Duke B	1	1,0,0,1	1
+GODS A	1	1,1,0,0	1
+GSU B	1	1,1,0,0	1
+HKCityU A	1	1,0,1,0	1
+HUJI B	1	1,0,1,0	1
+Hawaii A	1	0,1,1,0	1
+Hit-u B	1	0,1,1,0	1
+IBA DU B	1	0,1,1,0	1
+IPB A	1	1,1,0,0	1
+Imperial A	1	1,1,0,0	1
+Inner A	1	1,0,1,0	1
+Krakow A	1	0,1,0,1	1
+Kyushu A	1	1,1,0,0	1
+McGill D	1	0,1,0,1	1
+NEU B	1	1,0,0,1	1
+NUIG A	1	0,0,1,1	1
+NYU LY A	1	1,1,0,0	1
+Nazarbayev B	1	1,1,0,0	1
+NorthwestU A	1	0,0,1,1	1
+OCAD A	1	1,0,0,1	1
+PUCP A	1	0,1,1,0	1
+SDU A	1	0,1,0,1	1
+SKT B	1	0,1,0,1	1
+SdDUP A	1	1,1,0,0	1
+Sheff A	1	1,0,0,1	1
+Singidunum A	1	1,0,0,1	1
+Technion A	1	0,0,1,1	1
+Tilbury B	1	1,1,0,0	1
+Tribhuvan A	1	1,1,0,0	1
+U.LISBON A	1	0,0,1,1	1
+UWI MONA B	1	1,0,1,0	1
+WCM A	1	1,0,1,0	1
+WCM B	1	1,0,0,1	1
+WCM C	1	0,0,1,1	1
+Warsaw B	1	1,0,0,1	1
+Warsaw C	1	1,0,1,0	1
+Waseda A	1	1,0,1,0	1
+Waseda B	1	1,1,0,0	1
+ASDV A	0	1,0,0,1	1
+Berlin B	0	1,1,0,0	1
+DAE A	0	1,0,1,0	1
+FDU B	0	1,0,0,1	1
+IBA Karachi A	0	0,0,0,0	0
+IMSU A	0	0,0,0,0	0
+IMSU B	0	0,0,0,0	0
+IMSU C	0	0,0,0,0	0
+IUB A	0	0,0,0,0	0
+IUB B	0	0,0,0,0	0
+KDS A	0	0,0,0,0	0
+KSAL A	0	0,1,0,1	1
+KU Nepal A	0	1,0,1,0	1
+Kiel A	0	1,1,0,0	1
+Kyoto B	0	1,0,1,0	1
+LLA A	0	1,0,1,0	1
+MSU BD A	0	0,0,1,1	1
+Melbourne D	0	0,0,0,0	0
+Morehouse C	0	0,0,0,0	0
+NUDT A	0	0,0,1,1	1
+NUIG B	0	1,0,0,1	1
+PLACEHOLDER	0	0,0,0,0	0
+Rosario B	0	1,0,0,1	1
+STIPRam A	0	0,1,0,1	1
+San Beda A	0	0,0,0,0	0
+Sogang A	0	0,0,0,0	0
+Southampton A	0	0,0,0,0	0
+Swing C	0	0,0,0,1	0
+Swing D	0	0,0,1,0	0
+Swing E	0	0,0,0,0	0
+Swing F	0	0,0,0,0	0
+Team 396	0	0,0,0,0	0
+Team 397	0	0,0,0,0	0
+Tec CEM C	0	0,1,0,1	1
+Tokai A	0	0,1,1,0	1
+UCO A	0	0,1,0,1	1
+UCV A	0	0,0,1,1	1
+UFV A	0	1,0,1,0	1
+UMB A	0	1,0,0,1	1
+UST A	0	0,0,0,0	0
+UT MARA C	0	0,0,1,1	1
+UTECH B	0	0,0,1,1	1
+UWI MONA A	0	1,0,1,0	1
+arts A	0	1,0,1,0	1
