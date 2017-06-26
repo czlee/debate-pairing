@@ -23,7 +23,9 @@ def read_input_file(filename):
     f = open(filename)
     data = []
     for line in f:
-        team, points, history = line.split("\t")
+        team, points, history, active = line.split("\t")
+        if int(active) == 0:
+            continue
         history = [int(x) for x in history.split(",")]
         data.append((team, int(points), history))
     assert len(data) % 4 == 0
