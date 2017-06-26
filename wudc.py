@@ -135,7 +135,7 @@ def compare_badness(rooms, other_filename):
     other_histories = {team: history for team, _, history in other_data}
     this_total = 0
     other_total = 0
-    print("           team      ours      original")
+    print("\033[1;36m           team      ours      original\033[0m")
     for room in rooms:
         for i, (team, _, history) in enumerate(room):
             history = history.copy()
@@ -144,14 +144,18 @@ def compare_badness(rooms, other_filename):
             this_total += this_badness
             other_badness = get_position_badness(other_histories[team])
             other_total += other_badness
-            print("{team:>15s}: {bad1:>2d} {hist1:7s}  {bad2:>2d} {hist2:7s}".format(
-                team=team[:15], bad1=this_badness, bad2=other_badness,
+            print("{team:>16s}: {color1}{bad1:>2d} {hist1:7s}  {color2}{bad2:>2d} {hist2:7s}\033[0m".format(
+                team=team[:16], bad1=this_badness, bad2=other_badness,
                 hist1=",".join(map(str, history)),
-                hist2=",".join(map(str, other_histories[team]))
+                hist2=",".join(map(str, other_histories[team])),
+                color1="\033[0;34m" if this_badness == 0 else
+                       "\033[1;33m" if this_badness > other_badness else "",
+                color2="\033[0;34m" if other_badness == 0 else
+                       "\033[1;33m" if other_badness > this_badness else "",
             ))
 
-    print("       our total:", this_total)
-    print("comparison total:", other_total)
+    print("\033[0;36m       our total:\033[1;37m", this_total, "\033[0m")
+    print("\033[0;36mcomparison total:\033[1;37m", other_total, "\033[0m")
 
 def show_original_rooms(data, filename):
     properties = {team: (points, history) for team, points, history in data}
@@ -189,10 +193,10 @@ if __name__ == "__main__":
 
     data = read_input_file(filename)
     rooms = generate_draw(data)
-    print("Our draw:")
+    print("\033[1;36mOur draw:\033[0m")
     show_rooms(rooms)
     if actualdrawfile:
-        print("Original draw:")
+        print("\033[1;36mOriginal draw:\033[0m")
         show_original_rooms(data, actualdrawfile)
     if comparefile:
         compare_badness(rooms, comparefile)
