@@ -103,7 +103,7 @@ def generate_cost_matrix(data, cost_method="weighted"):
 
 def hungarian_shuffled(costs):
     """Applies the Hungarian algorithm to `costs`, but permutes the rows and
-    columns of the matrix first. Returns a list of column numbers."""
+    columns of the matrix first. Returns a list of indices pairs (row, col)."""
     n = len(costs)
     I = random.sample(range(n), n)
     J = random.sample(range(n), n)
