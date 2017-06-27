@@ -65,7 +65,7 @@ def define_rooms(points):
 
     return rooms
 
-def generate_cost_matrix(data):
+def generate_cost_matrix(data, cost_method="weighted"):
     """Returns a cost matrix for the tournament.
     Rows (inner lists) are teams, in the same order as in data.
     Columns (elements) are positions in rooms, ordered first by room in the
@@ -87,6 +87,8 @@ def generate_cost_matrix(data):
         for room in rooms:
             if points not in room:
                 row.extend([DISALLOWED, DISALLOWED, DISALLOWED, DISALLOWED])
+            elif cost_method == "raw":
+                row.extend(history)
             else:
                 for pos in range(4):
                     new_history = history.copy()
@@ -114,8 +116,8 @@ def collate_rooms(data, indices):
         rooms[r // 4][r % 4] = data[t]
     return rooms
 
-def generate_draw(data):
-    costs = generate_cost_matrix(data)
+def generate_draw(data, cost_method="weighted"):
+    costs = generate_cost_matrix(data, cost_method)
     indices = hungarian_shuffled(costs)
     rooms = collate_rooms(data, indices)
     return rooms
@@ -128,54 +130,89 @@ def show_rooms(rooms):
         print("   ".join(teams))
     print()
 
-def compare_badness(rooms, other_filename):
+def compare_badness(rooms, other_filename, color=False):
     """Compares the position badness implied by `data` and `indices`, to that
     stored in `other_filename`."""
     other_data = read_input_file(other_filename, include_all=True)
     other_histories = {team: history for team, _, history in other_data}
     this_total = 0
     other_total = 0
-    print("\033[1;36m           team      ours      original\033[0m")
+
+    teams = []
     for room in rooms:
         for i, (team, _, history) in enumerate(room):
-            history = history.copy()
-            history[i] += 1
-            this_badness = get_position_badness(history)
+            this_history = history.copy()
+            this_history[i] += 1
+            this_badness = get_position_badness(this_history)
             this_total += this_badness
             other_badness = get_position_badness(other_histories[team])
             other_total += other_badness
-            print("{team:>16s}: {color1}{bad1:>2d} {hist1:7s}  {color2}{bad2:>2d} {hist2:7s}\033[0m".format(
-                team=team[:16], bad1=this_badness, bad2=other_badness,
-                hist1=",".join(map(str, history)),
-                hist2=",".join(map(str, other_histories[team])),
-                color1="\033[0;34m" if this_badness == 0 else
-                       "\033[1;33m" if this_badness > other_badness else "",
-                color2="\033[0;34m" if other_badness == 0 else
-                       "\033[1;33m" if other_badness > this_badness else "",
-            ))
+            teams.append((team, history, this_badness, this_history, other_badness, other_histories[team]))
+    teams.sort(key=lambda x: (x[2], x[4]), reverse=True)
 
-    print("\033[0;36m       our total:\033[1;37m", this_total, "\033[0m")
-    print("\033[0;36mcomparison total:\033[1;37m", other_total, "\033[0m")
+    if color:
+        CYAN = "\033[1;36m"
+        BLUE = "\033[0;34m"
+        GREEN = "\033[32m"
+        NORMAL = "\033[0m"
+        BOLD_CYAN = "\033[1;36m"
+        BOLD_YELLOW = "\033[1;33m"
+        BOLD_WHITE = "\033[1;37m"
+    else:
+        CYAN = BOLD_CYAN = BLUE = GREEN = BOLD_YELLOW = NORMAL = BOLD_WHITE = ""
+
+    def history_string(base, original, changed):
+        strings = []
+        for a, b in zip(original, changed):
+            if a != b:
+                strings.append(GREEN + str(b) + base)
+            else:
+                strings.append(str(b))
+        return base + ",".join(strings) + NORMAL
+
+    print(BOLD_CYAN + "           team      ours      original" + NORMAL)
+
+    for team, original_history, this_badness, this_history, other_badness, other_history in teams:
+        this_base = BLUE if this_badness == 0 else BOLD_YELLOW if this_badness > other_badness else NORMAL
+        other_base = BLUE if other_badness == 0 else BOLD_YELLOW if other_badness > this_badness else NORMAL
+        this_badness_str = "{c}{bad:>2d}{n}".format(bad=this_badness, c=this_base, n=NORMAL)
+        other_badness_str = "{c}{bad:>2d}{n}".format(bad=other_badness, c=other_base, n=NORMAL)
+        this_history_str = history_string(this_base, original_history, this_history)
+        other_history_str = history_string(other_base, original_history, other_history)
+
+        print("{team:>16s}: {bad1:>2s} {hist1:7s}  {bad2:>2s} {hist2:7s}".format(
+            team=team[:16], bad1=this_badness_str, bad2=other_badness_str,
+            hist1=this_history_str, hist2=other_history_str,
+        ))
+
+    print(CYAN + "       our total:" + BOLD_WHITE, this_total, NORMAL)
+    print(CYAN + "comparison total:" + BOLD_WHITE, other_total, NORMAL)
 
 def show_original_rooms(data, filename):
     properties = {team: (points, history) for team, points, history in data}
     f = open(filename)
+    rooms = []
     for line in f:
         names = line.split("\t")
-        room_properties = [properties[name.strip()] for name in names]
-        teams = ["{team:>12s} {points:>2d} {history:7s}".format(
-            team=team.strip()[:12], points=points, history=",".join(map(str, history)))
-            for team, (points, history) in zip(names, room_properties)]
-        print("   ".join(teams))
-    print()
+        rooms.append([(name.strip(),) + properties[name.strip()] for name in names])
+    rooms.sort(key=lambda x: max(y[1] for y in x), reverse=True)
+    show_rooms(rooms)
+
+def _print_heading(message, color=False):
+    if color:
+        print("\033[1;36m" + message + "\033[0m")
+    else:
+        print(message)
 
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("tournament")
     parser.add_argument("round", type=int, nargs='?',    default=None)
-    parser.add_argument("-c", "--compare-file")
-    parser.add_argument("-d", "--actual-draw")
+    parser.add_argument("-C", "--compare-file")
+    parser.add_argument("-D", "--actual-draw")
+    parser.add_argument("-m", "--no-color", dest="color", action="store_false", default=True)
+    parser.add_argument("-c", "--cost-method", choices=["raw", "weighted"], default="weighted")
     args = parser.parse_args()
 
     import os.path
@@ -192,11 +229,11 @@ if __name__ == "__main__":
         exit()
 
     data = read_input_file(filename)
-    rooms = generate_draw(data)
-    print("\033[1;36mOur draw:\033[0m")
+    rooms = generate_draw(data, args.cost_method)
+    _print_heading("Our draw:", args.color)
     show_rooms(rooms)
     if actualdrawfile:
-        print("\033[1;36mOriginal draw:\033[0m")
+        _print_heading("\033[1;36mOriginal draw:\033[0m", args.color)
         show_original_rooms(data, actualdrawfile)
     if comparefile:
-        compare_badness(rooms, comparefile)
+        compare_badness(rooms, comparefile, args.color)
