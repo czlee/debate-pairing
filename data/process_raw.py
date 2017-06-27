@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 """Processes data that is copied and pasted from the round pages in Tabbie2, to
 remove confidential information. The resulting files will be a list of debates,
 one debate per line, with team names separated by tabs on each line.

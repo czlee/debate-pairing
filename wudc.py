@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 """Simplified version of a Hungarian algorithm-based WUDC draw generator.
 Requires the munkres package (available on PyPI).
 

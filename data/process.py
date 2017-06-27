@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 """Processes data to produce a ranked list of teams, with position histories,
 for each round. Within each brackets, teams are sorted alphabetically, to make
 failure to randomise easy to detect.
@@ -48,6 +49,8 @@ def read_team_tab():
             except IndexError:
                 x = ''
             x = x.strip()
+            if x.endswith('*'):
+                x = x[:-1]
             if x and x != '-':
                 cumul += int(x)
             points.append(cumul)
