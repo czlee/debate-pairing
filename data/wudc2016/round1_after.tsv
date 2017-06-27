@@ -1,0 +1,398 @@
+Aberdeen A	3	0,0,0,1	1
+American A	3	0,1,0,0	1
+Atma Jaya A	3	0,0,0,1	1
+Auckland A	3	0,0,0,1	1
+Australian Natl B	3	0,1,0,0	1
+Autónomo México A	3	0,0,0,1	1
+BPP A	3	0,1,0,0	1
+Bangladesh UET A	3	0,1,0,0	1
+Bates C	3	0,0,0,1	1
+Belgrade C	3	1,0,0,0	1
+Cambridge A	3	1,0,0,0	1
+Cambridge B	3	0,1,0,0	1
+Cambridge C	3	0,1,0,0	1
+Cape Town B	3	0,0,0,1	1
+Carleton A	3	0,0,1,0	1
+Clemson B	3	0,0,1,0	1
+Dalhousie A	3	0,0,1,0	1
+De La Salle A	3	0,0,0,1	1
+Denver A	3	0,1,0,0	1
+Duke A	3	0,1,0,0	1
+Durham A	3	0,0,1,0	1
+Durham B	3	0,0,0,1	1
+Franklin & Marshall A	3	0,1,0,0	1
+George Washington A	3	0,0,1,0	1
+HWS A	3	0,0,1,0	1
+Hart House A	3	1,0,0,0	1
+Hart House B	3	1,0,0,0	1
+Harvard A	3	0,1,0,0	1
+Hawaii A	3	0,0,0,1	1
+Hull A	3	0,0,0,1	1
+IBA Dhaka A	3	0,0,0,1	1
+IDC Herzliya Recanati B	3	0,0,0,1	1
+Imperial A	3	0,0,0,1	1
+Indonesia A	3	0,0,0,1	1
+King's (New York) A	3	0,0,0,1	1
+King's London A	3	0,0,1,0	1
+King's London B	3	0,0,1,0	1
+LSE A	3	0,1,0,0	1
+La Verne A	3	0,0,1,0	1
+Laurier A	3	0,0,1,0	1
+Leiden A	3	0,0,0,1	1
+Leiden B	3	0,1,0,0	1
+Linkopings A	3	1,0,0,0	1
+London Union A	3	1,0,0,0	1
+London Union B	3	0,0,1,0	1
+Macquarie A	3	0,0,1,0	1
+Manchester A	3	0,0,0,1	1
+McGill B	3	0,0,1,0	1
+Melbourne C	3	1,0,0,0	1
+Monash A	3	0,0,1,0	1
+Monash B	3	1,0,0,0	1
+Montréal A	3	0,0,0,1	1
+Morehouse A	3	0,1,0,0	1
+Munich A	3	0,0,1,0	1
+NIBM (India) A	3	0,1,0,0	1
+Nanyang TU A	3	0,1,0,0	1
+Nanyang TU B	3	0,0,1,0	1
+New South Wales A	3	0,0,1,0	1
+North West (RSA) A	3	0,0,0,1	1
+Nottingham A	3	0,0,1,0	1
+Otago A	3	0,1,0,0	1
+Otago C	3	0,0,1,0	1
+Ottawa B	3	0,0,0,1	1
+Oxford A	3	0,0,0,1	1
+Oxford C	3	0,0,0,1	1
+Pennsylvania A	3	0,0,0,1	1
+Princeton A	3	0,0,0,1	1
+Queen's B	3	0,0,1,0	1
+Queensland B	3	0,0,0,1	1
+Queensland C	3	1,0,0,0	1
+Queensland UT A	3	0,0,1,0	1
+Radboud A	3	0,0,0,1	1
+Romanian-American A	3	1,0,0,0	1
+St Andrews A	3	0,0,0,1	1
+Stanford A	3	1,0,0,0	1
+Sydney Union B	3	0,1,0,0	1
+Sydney Union C	3	0,0,0,1	1
+TCD Hist A	3	1,0,0,0	1
+TCD Phil B	3	0,0,0,1	1
+Tel Aviv A	3	0,0,1,0	1
+Tufts A	3	0,1,0,0	1
+UC London A	3	0,1,0,0	1
+UCC Philosoph A	3	0,1,0,0	1
+UCD L&H B	3	0,0,1,0	1
+UCD Law B	3	0,1,0,0	1
+UT Cluj-Napoca A	3	0,0,0,1	1
+UT Mara A	3	0,1,0,0	1
+Victoria Wellington B	3	0,0,0,1	1
+Visoka škola PEP A	3	1,0,0,0	1
+Western Australia A	3	0,1,0,0	1
+Western Ontario A	3	0,1,0,0	1
+Wollongong A	3	0,0,0,1	1
+Yale A	3	0,1,0,0	1
+Yale B	3	0,0,1,0	1
+Yale C	3	0,1,0,0	1
+Yale-NUS A	3	0,1,0,0	1
+Alaska A	2	0,1,0,0	1
+Amherst B	2	0,1,0,0	1
+Ateneo A	2	0,0,1,0	1
+Auckland B	2	0,0,0,1	1
+Australian Natl A	2	0,1,0,0	1
+Babeș-Bolyai B	2	0,0,0,1	1
+Bates A	2	0,1,0,0	1
+Bates B	2	0,1,0,0	1
+Belgrade A	2	1,0,0,0	1
+Belgrade B	2	1,0,0,0	1
+Ben-Gurion A	2	0,0,0,1	1
+Ben-Gurion B	2	0,0,1,0	1
+Berlin A	2	0,1,0,0	1
+Berlin B	2	0,1,0,0	1
+BiTS Iserlohn A	2	0,1,0,0	1
+Birmingham A	2	0,1,0,0	1
+Boston A	2	0,1,0,0	1
+British Columbia A	2	0,1,0,0	1
+British Columbia B	2	0,0,0,1	1
+Claremont A	2	0,0,1,0	1
+Columbia A	2	0,1,0,0	1
+Cornell A	2	1,0,0,0	1
+Cornell B	2	0,0,1,0	1
+Deree A	2	0,0,1,0	1
+Gadjah Mada A	2	0,0,1,0	1
+Ghulam Ishaq Khan B	2	0,0,0,1	1
+Glasgow A	2	0,0,1,0	1
+Glasgow B	2	0,0,0,1	1
+Groningen A	2	0,0,0,1	1
+Haifa B	2	0,1,0,0	1
+Harvard B	2	0,0,0,1	1
+Harvard C	2	1,0,0,0	1
+Helsinki A	2	0,0,1,0	1
+IBA Dhaka B	2	0,1,0,0	1
+IBA Karachi A	2	0,1,0,0	1
+IIU Malaysia A	2	0,0,1,0	1
+ITESM CSF A	2	1,0,0,0	1
+Indonesia B	2	0,1,0,0	1
+Inner Temple A	2	0,0,0,1	1
+Jagiellonian A	2	0,0,1,0	1
+Karachi A	2	1,0,0,0	1
+Kyoto A	2	1,0,0,0	1
+LSE B	2	0,0,0,1	1
+Lancaster A	2	0,0,1,0	1
+Loyola Marymount A	2	1,0,0,0	1
+Lumina A	2	1,0,0,0	1
+McGill A	2	1,0,0,0	1
+Monash C	2	0,0,1,0	1
+NLS India A	2	1,0,0,0	1
+NU Singapore A	2	1,0,0,0	1
+NU Singapore B	2	0,1,0,0	1
+Nacl Colombia A	2	0,0,1,0	1
+New South Wales B	2	0,0,1,0	1
+New South Wales C	2	0,1,0,0	1
+Nth British Columbia A	2	1,0,0,0	1
+Odessa NU A	2	0,0,1,0	1
+OpenU A	2	0,1,0,0	1
+Otago B	2	0,1,0,0	1
+Oxford B	2	0,1,0,0	1
+Pacific A	2	0,1,0,0	1
+Padjadjaran A	2	0,1,0,0	1
+Princeton B	2	0,1,0,0	1
+Queen's A	2	1,0,0,0	1
+Queensland A	2	0,0,0,1	1
+RWTH Aachen A	2	0,0,0,1	1
+Sciences Po A	2	0,1,0,0	1
+Seoul A	2	0,0,0,1	1
+Singapore IM A	2	1,0,0,0	1
+Singapore MU A	2	0,0,1,0	1
+Sogang A	2	1,0,0,0	1
+St Andrews B	2	0,0,1,0	1
+St Petersburg SEU A	2	0,1,0,0	1
+Stockholm A	2	0,0,1,0	1
+Swarthmore A	2	0,0,1,0	1
+TCD Phil A	2	0,0,1,0	1
+TEC Mexico A	2	0,0,1,0	1
+Tartu A	2	1,0,0,0	1
+Tübingen A	2	0,1,0,0	1
+UCC Philosoph B	2	0,0,0,1	1
+UCD L&H A	2	0,0,0,1	1
+UCD Law A	2	0,0,1,0	1
+UKIM Skopje A	2	0,1,0,0	1
+US Air Force A	2	0,1,0,0	1
+USMA West Point A	2	0,1,0,0	1
+UT Jamaica B	2	0,0,1,0	1
+UWI Mona A	2	1,0,0,0	1
+Vassar A	2	1,0,0,0	1
+Vermont A	2	0,0,1,0	1
+Victoria Wellington A	2	1,0,0,0	1
+Visoka škola PEP B	2	0,0,1,0	1
+Warwick A	2	0,0,1,0	1
+Warwick B	2	1,0,0,0	1
+Waseda A	2	1,0,0,0	1
+Western Australia B	2	0,1,0,0	1
+Western Washington A	2	0,1,0,0	1
+York A	2	0,0,0,1	1
+Aberystwyth A	1	0,1,0,0	1
+Athens A	1	1,0,0,0	1
+Athens UEB A	1	0,1,0,0	1
+BRAC A	1	0,1,0,0	1
+BRAC B	1	1,0,0,0	1
+Babeș-Bolyai A	1	0,1,0,0	1
+Bard A	1	0,0,1,0	1
+Beijing FSU A	1	1,0,0,0	1
+Bielefeld A	1	0,0,1,0	1
+Bogazici A	1	1,0,0,0	1
+Brandeis A	1	1,0,0,0	1
+Brandeis B	1	1,0,0,0	1
+Brown A	1	0,1,0,0	1
+CMU Qatar B	1	0,1,0,0	1
+Canterbury A	1	0,1,0,0	1
+Canterbury B	1	1,0,0,0	1
+Cape Town A	1	1,0,0,0	1
+Chicago A	1	1,0,0,0	1
+Clemson A	1	1,0,0,0	1
+Colgate A	1	0,0,0,1	1
+Cologne A	1	0,1,0,0	1
+Cologne B	1	0,0,1,0	1
+Curtin Sarawak A	1	0,1,0,0	1
+Dhaka A	1	1,0,0,0	1
+Duke B	1	0,0,1,0	1
+Erasmus A	1	0,1,0,0	1
+Ewha A	1	0,0,0,1	1
+Fordham B	1	0,0,1,0	1
+Fort Hare A	1	0,1,0,0	1
+Free State A	1	0,1,0,0	1
+Galatasaray A	1	0,0,0,1	1
+Ghulam Ishaq Khan A	1	0,0,0,1	1
+Haifa A	1	0,0,0,1	1
+Hanyang A	1	0,0,0,1	1
+Hebrew Jerusalem A	1	0,0,1,0	1
+Hong Kong A	1	0,1,0,0	1
+Hong Kong UST A	1	1,0,0,0	1
+Hong Kong UST B	1	0,0,0,1	1
+IDC Herzliya Recanati A	1	1,0,0,0	1
+IIM Ahmedabad A	1	0,0,0,1	1
+IIT Bombay A	1	1,0,0,0	1
+IUT A	1	0,1,0,0	1
+IUT B	1	0,1,0,0	1
+Independent Bangladesh A	1	1,0,0,0	1
+Intl Christian B	1	0,1,0,0	1
+Jyväskylä A	1	0,0,1,0	1
+LCLS (Dhaka) A	1	1,0,0,0	1
+Lisbon A	1	0,1,0,0	1
+Lund B	1	0,0,0,1	1
+MGIMO (Moscow) A	1	1,0,0,0	1
+Macau A	1	0,0,0,1	1
+Megatrend A	1	1,0,0,0	1
+Melbourne A	1	0,0,0,1	1
+Middlebury A	1	0,0,1,0	1
+Midlands State B	1	0,1,0,0	1
+Montréal B	1	0,1,0,0	1
+Morehouse B	1	0,0,1,0	1
+Muenster B	1	0,0,1,0	1
+NLS India B	1	1,0,0,0	1
+NUI Galway A	1	0,0,1,0	1
+Natl Defense Tech A	1	0,1,0,0	1
+Nazarbayev B	1	0,0,0,1	1
+North South A	1	1,0,0,0	1
+Northeastern (Boston) A	1	1,0,0,0	1
+Osaka A	1	0,0,0,1	1
+Ottawa A	1	0,0,0,1	1
+Paris Tech A	1	1,0,0,0	1
+Peking A	1	1,0,0,0	1
+Porto A	1	0,0,1,0	1
+SOAS London A	1	1,0,0,0	1
+SSE Riga A	1	1,0,0,0	1
+Seoul B	1	0,0,0,1	1
+Shanghai UFE A	1	0,0,1,0	1
+SolBridge A	1	1,0,0,0	1
+Sophia A	1	0,0,1,0	1
+Southern Illinois B	1	0,0,0,1	1
+Stanford B	1	0,0,0,1	1
+Stockholm B	1	0,0,1,0	1
+Sydney Union A	1	0,0,0,1	1
+TCD Hist B	1	0,0,1,0	1
+TU Dresden A	1	0,1,0,0	1
+Tel Aviv B	1	1,0,0,0	1
+Tokyo A	1	0,0,0,1	1
+Tokyo IT B	1	0,0,0,1	1
+Tsinghua A	1	0,0,0,1	1
+UC Roosevelt A	1	0,0,1,0	1
+UCC Law A	1	0,1,0,0	1
+UMF Iuliu Hațieganu A	1	1,0,0,0	1
+UT Jamaica A	1	0,0,0,1	1
+UT Sydney A	1	1,0,0,0	1
+UT Sydney B	1	0,1,0,0	1
+United Intl A	1	0,0,1,0	1
+Utrecht A	1	1,0,0,0	1
+Vienna A	1	0,0,0,1	1
+Western Sydney A	1	0,0,0,1	1
+Yonsei Underwood A	1	0,0,1,0	1
+ASE Bucharest A	0	0,0,1,0	1
+AU Afghanistan A	0	0,0,0,0	0
+Akita A	0	1,0,0,0	1
+Al. I. Cuza A	0	0,0,0,1	1
+Alberta A	0	0,1,0,0	1
+Amherst A	0	0,0,1,0	1
+Aoyama A	0	0,0,0,1	1
+Asia Pacific A	0	1,0,0,0	1
+Autónomo México B	0	0,0,0,0	0
+Bangladesh UET B	0	0,0,0,1	1
+Binus Intl A	0	0,1,0,0	1
+Brawijaya A	0	0,0,0,1	1
+Bucharest A	0	0,0,0,1	1
+CMU Qatar A	0	0,0,0,1	1
+COMAS A	0	1,0,0,0	1
+COSTAATT A	0	0,1,0,0	1
+CU Hong Kong A	0	0,0,0,1	1
+CU Hong Kong B	0	0,1,0,0	1
+Central de Venezuela A	0	0,0,0,1	1
+China Petroleum A	0	0,0,1,0	1
+Chittagong A	0	1,0,0,0	1
+Chung-Ang A	0	0,0,0,0	0
+CityU Hong Kong A	0	0,0,1,0	1
+Coimbra A	0	0,0,1,0	1
+Columbia B	0	0,0,0,1	1
+Dartmouth A	0	0,0,1,0	1
+De La Salle B	0	1,0,0,0	1
+Ewha B	0	0,0,1,0	1
+Extremadura A	0	0,0,0,1	1
+FSU Jena A	0	0,0,1,0	1
+Fordham A	0	0,1,0,0	1
+Fudan A	0	0,1,0,0	1
+Ghana A	0	0,0,0,0	0
+Ginling A	0	0,1,0,0	1
+Göttingen A	0	0,0,1,0	1
+Hitotsubashi A	0	1,0,0,0	1
+IDC Herzliya A	0	1,0,0,0	1
+IDC Herzliya B	0	1,0,0,0	1
+IIT Bombay B	0	0,0,1,0	1
+IIU Malaysia B	0	0,0,1,0	1
+Intl Christian A	0	0,0,0,1	1
+KIMEP A	0	0,0,0,1	1
+Kabul A	0	0,0,0,0	0
+Kabul Education A	0	0,0,0,0	0
+Kabul Polytechnic A	0	0,0,0,0	0
+Kapitza A	0	1,0,0,0	1
+Kathmandu A	0	0,0,1,0	1
+Keio A	0	0,1,0,0	1
+Kiel A	0	0,0,0,1	1
+Kutafin MSLU A	0	0,0,1,0	1
+Lahore UMS A	0	0,0,0,0	0
+Ljubljana A	0	1,0,0,0	1
+Lund A	0	0,0,1,0	1
+Macedonia A	0	1,0,0,0	1
+Macquarie B	0	1,0,0,0	1
+Malaya A	0	0,0,1,0	1
+Malaya B	0	0,0,1,0	1
+Melbourne B	0	0,0,1,0	1
+Midlands State A	0	1,0,0,0	1
+Moscow IPT A	0	0,0,1,0	1
+Moscow IPT B	0	0,0,1,0	1
+Moscow State A	0	0,0,1,0	1
+Muenster A	0	1,0,0,0	1
+Mumbai A	0	0,0,0,1	1
+NE Qinhuangdao A	0	0,1,0,0	1
+NTU Athens A	0	1,0,0,0	1
+NYU Shanghai A	0	1,0,0,0	1
+Nagoya A	0	0,1,0,0	1
+Nazarbayev A	0	0,1,0,0	1
+New Jersey A	0	0,0,0,1	1
+New York A	0	0,0,1,0	1
+Northwest (USA) A	0	1,0,0,0	1
+Nottingham Ningbo A	0	1,0,0,0	1
+Otgontenger A	0	1,0,0,0	1
+PS Bucharest A	0	0,0,0,1	1
+PUCP Perú A	0	1,0,0,0	1
+PUCP Perú B	0	0,1,0,0	1
+Porto B	0	1,0,0,0	1
+Rana A	0	0,0,0,0	0
+Regis A	0	1,0,0,0	1
+Rosario A	0	0,0,1,0	1
+Santa María La Antigua A	0	0,0,1,0	1
+Santo Tomas A	0	0,0,0,0	0
+Sheffield A	0	0,0,1,0	1
+Southern Illinois A	0	0,0,1,0	1
+Splitska A	0	1,0,0,0	1
+Swing A	0	0,0,0,0	0
+Swing B	0	0,1,0,0	1
+Swing C	0	0,0,0,0	0
+Texas A&M Qatar A	0	1,0,0,0	1
+Tokyo IT A	0	0,0,0,1	1
+Tribhuvan A	0	1,0,0,0	1
+Tshwane UT Pretoria A	0	0,0,0,0	0
+Turku A	0	1,0,0,0	1
+UC London B	0	1,0,0,0	1
+UMF Carol Davila A	0	0,0,0,1	1
+UWI Mona B	0	0,0,0,1	1
+UWI Western Jamaica A	0	0,1,0,0	1
+Uniciencia A	0	1,0,0,0	1
+Wageningen A	0	0,0,1,0	1
+Warsaw A	0	1,0,0,0	1
+Weill Cornell Qatar A	0	0,0,0,1	1
+Weill Cornell Qatar B	0	0,0,1,0	1
+Westminster A	0	0,0,0,1	1
+Willamette A	0	0,0,0,1	1
+Yaroslav Mudryi NLU A	0	1,0,0,0	1
+Yogyakarta State A	0	0,0,0,1	1
+Zagreb A	0	0,0,0,1	1
+Zagreb Law A	0	1,0,0,0	1
+Zimbabwe A	0	0,0,0,0	0

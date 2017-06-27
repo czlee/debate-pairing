@@ -1,0 +1,183 @@
+Bates SGD	6	1,1,0,0	1
+Cornell RL	6	0,0,1,1	1
+Denver MP	6	1,1,0,0	1
+George Washington SV	6	1,0,0,1	1
+Harvard BD	6	0,0,1,1	1
+Harvard CZ	6	0,0,1,1	1
+Harvard HW	6	1,0,0,1	1
+Hawaii DH	6	0,0,1,1	1
+Stanford EL	6	1,1,0,0	1
+Swarthmore MP	6	0,1,0,1	1
+Vermont HT	6	1,1,0,0	1
+American MO	5	0,1,0,1	1
+Amherst/Penn JL	5	1,1,0,0	1
+Bates HL	5	0,1,0,1	1
+Bates HM	5	1,0,0,1	1
+Bates WM	5	0,1,0,1	1
+Brown CT	5	0,1,0,1	1
+Brown SQ	5	0,1,0,1	1
+Columbia TS	5	1,0,1,0	1
+George Washington BW	5	0,1,0,1	1
+Hart House GL	5	1,1,0,0	1
+Harvard HB	5	1,1,0,0	1
+Princeton WA	5	1,1,0,0	1
+Rochester FM	5	1,0,0,1	1
+Sodales HN	5	1,0,0,1	1
+Stanford AS	5	0,0,1,1	1
+Stanford GL	5	0,0,1,1	1
+Swarthmore DH	5	1,1,0,0	1
+Swarthmore JK	5	0,1,1,0	1
+Swarthmore SW	5	0,1,0,1	1
+Tufts CS	5	1,1,0,0	1
+Tufts SL	5	0,0,1,1	1
+Vermont OS	5	0,0,1,1	1
+Alaska EE	4	1,0,1,0	1
+Alaska OS	4	0,0,1,1	1
+Amherst CS	4	0,0,1,1	1
+Bard BC	4	0,0,1,1	1
+Bates DS	4	0,1,0,1	1
+Bates SZ	4	1,0,1,0	1
+Brown GH	4	0,1,0,1	1
+Brown HR	4	1,0,0,1	1
+Carleton GA	4	0,1,1,0	1
+Clemson KS	4	0,1,0,1	1
+Colgate BH	4	1,1,0,0	1
+Columbia/Boston IP	4	1,0,0,1	1
+Cornell BB	4	0,1,0,1	1
+Denver MF	4	0,1,1,0	1
+HWS MN	4	1,1,0,0	1
+Harvard CY	4	1,1,0,0	1
+Harvard HY	4	0,1,1,0	1
+King's CL	4	1,0,0,1	1
+King's CS	4	0,1,0,1	1
+Louisiana Tech MF	4	0,0,1,1	1
+McGill BS	4	0,1,1,0	1
+McGill HA	4	0,0,1,1	1
+McGill XK	4	0,0,1,1	1
+Mount Holyoke KS	4	0,1,0,1	1
+Northeastern SZ	4	1,1,0,0	1
+Penn JT	4	0,1,0,1	1
+Queen's DS	4	0,0,1,1	1
+Rochester AT	4	0,1,0,1	1
+Rochester KP	4	1,1,0,0	1
+St. John GH	4	1,0,0,1	1
+Stanford KW	4	1,0,0,1	1
+Swarthmore/CUNY AN	4	0,0,1,1	1
+Tufts DH	4	0,0,1,1	1
+USC LR	4	0,0,1,1	1
+Bard RS	3	1,0,1,0	1
+Berkeley AB	3	1,1,0,0	1
+Berkeley WS	3	0,0,1,1	1
+Brandeis HL	3	1,0,0,1	1
+CUNY FC	3	0,0,0,1	1
+Clemson SS	3	1,0,1,0	1
+Colgate AF	3	1,0,0,1	1
+Colgate MZ	3	0,1,0,1	1
+Columbia DE	3	0,1,1,0	1
+Columbia HC	3	0,0,1,1	1
+Columbia KB	3	1,0,1,0	1
+Cornell LB	3	1,1,0,0	1
+Cornell SJ	3	1,0,0,1	1
+Cornell YL	3	0,1,1,0	1
+Duke FM	3	0,1,1,0	1
+Duke GS	3	0,1,0,1	1
+Duke SY	3	0,1,0,1	1
+Fordham AA	3	0,0,1,1	1
+Fordham HM	3	0,0,1,1	1
+Fordham KB	3	0,1,0,1	1
+GWU AL	3	1,0,1,0	1
+Hart House LZ	3	0,0,1,1	1
+Hawaii BG	3	0,0,1,1	1
+Hopkins YZ	3	1,0,0,1	1
+Loyola Marymount CG	3	0,1,1,0	1
+McGill WA	3	1,0,1,0	1
+Middlebury IIS LM	3	1,1,0,0	1
+Northeastern SS	3	0,1,1,0	1
+Princeton PH	3	0,1,0,1	1
+Queen's DP	3	1,0,1,0	1
+SYSU A	3	0,1,1,0	1
+St. John MT	3	0,0,1,1	1
+Stanford AF	3	1,1,0,0	1
+Stanford CK	3	1,0,0,1	1
+Stanford LW	3	0,1,0,1	1
+Swarthmore CS	3	0,0,1,1	1
+Swarthmore HJ	3	1,1,0,0	1
+Swarthmore/Brandeis CC	3	0,1,1,0	1
+Swing 2	3	0,1,0,0	0
+USC HH	3	1,0,0,1	1
+USC KN	3	1,0,0,1	1
+Vassar DP	3	0,1,1,0	1
+Vassar LP	3	1,1,0,0	1
+Vermont GT	3	0,1,1,0	1
+Amherst GM	2	0,0,1,1	1
+Brown GS	2	0,0,1,1	1
+Clemson CP	2	0,1,0,1	1
+Clemson HM	2	1,0,1,0	1
+Duke EH	2	1,1,0,0	1
+Duke NS	2	1,1,0,0	1
+East Carolina VG	2	1,0,1,0	1
+Fordham NH	2	0,1,1,0	1
+Fordham RMB	2	0,0,1,1	1
+GWU KD	2	1,0,1,0	1
+Hart House MY	2	0,0,1,1	1
+Harvard AP	2	1,1,0,0	1
+McGill LL	2	1,0,1,0	1
+Middlebury MF	2	0,0,1,1	1
+Middlebury/Penn SR	2	0,1,1,0	1
+Minerva HM	2	1,1,0,0	1
+Penn KW	2	0,1,1,0	1
+Poly Prep HS GW	2	0,1,0,1	1
+Princeton ZM	2	1,0,1,0	1
+Stanford DG	2	0,1,0,1	1
+Stanford LM	2	0,0,1,1	1
+Stanford MW	2	0,1,1,0	1
+Swing 1	2	0,0,0,1	1
+Tufts BH	2	1,1,0,0	1
+USC HA	2	1,0,1,0	1
+Vassar BK	2	0,0,1,1	1
+Vermont DN	2	0,1,1,0	1
+Vermont PS	2	1,0,1,0	1
+Vermont SW	2	0,1,1,0	1
+Vermont VQ	2	1,0,1,0	1
+Wesleyan AE	2	0,1,1,0	1
+Wesleyan IW	2	1,0,1,0	1
+West Point HN	2	1,0,1,0	1
+Bard KL	1	1,0,1,0	1
+Brown DN	1	0,1,1,0	1
+Columbia YB	1	1,0,1,0	1
+East Carolina MC	1	0,0,1,1	1
+HWS GM	1	1,0,0,1	1
+Harvard KJ	1	1,0,1,0	1
+King's JK	1	0,1,1,0	1
+Loyola Marymount DS	1	0,1,0,1	1
+McGill KP	1	0,0,1,1	1
+McGill MR	1	1,0,0,1	1
+Middlebury KW	1	1,1,0,0	1
+Northeastern OP	1	1,1,0,0	1
+Smith SC	1	1,1,0,0	1
+Sodales OR	1	1,1,0,0	1
+St. John BN	1	1,1,0,0	1
+Stanford AC	1	1,0,1,0	1
+Stanford CM	1	1,0,0,1	1
+Stanford HK	1	1,0,1,0	1
+Stanford ST	1	1,0,1,0	1
+Stony Brook CJ	1	1,0,0,0	0
+Stony Brook EO	1	0,0,0,1	0
+Stony Brook NZ	1	0,0,1,0	0
+West Point GH	1	1,0,1,0	1
+West Point JR	1	1,0,0,1	1
+CUNY AF	0	1,0,1,0	1
+CUNY OR	0	1,1,0,0	1
+East Carolina GB	0	0,1,0,1	1
+Fordham OBG	0	1,1,0,0	1
+Fordham PY	0	1,0,0,1	1
+GWU GK	0	1,1,0,0	1
+Hart House MS	0	0,1,0,0	0
+JHU-SAIS XG	0	1,0,1,0	1
+Louisiana Tech MM	0	1,0,0,1	1
+Mount Holyoke BB	0	1,1,0,0	1
+St. John DS	0	0,1,1,0	1
+Stanford DM	0	1,0,1,0	1
+Stony Brook HP	0	0,0,0,1	0
+Swing 3	0	0,0,0,0	0
+Vassar DS	0	1,1,0,0	1

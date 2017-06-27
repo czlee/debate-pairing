@@ -1,0 +1,398 @@
+Hart House A	24	2,2,3,2	0
+UT Mara A	23	2,2,2,3	0
+Visoka škola PEP A	22	3,2,2,2	0
+Auckland A	21	3,2,2,2	0
+Sydney Union A	21	2,3,2,2	0
+Yale B	21	2,3,2,2	0
+Auckland B	20	3,2,2,2	0
+Harvard A	20	2,3,2,2	0
+LSE A	20	2,3,2,2	0
+NIBM (India) A	20	3,2,2,2	0
+Sydney Union B	20	3,2,2,2	0
+Sydney Union C	20	2,2,3,2	0
+TCD Phil A	20	2,2,2,3	0
+Yale A	20	1,4,2,2	0
+Cambridge A	19	2,2,3,2	0
+Durham A	19	2,2,3,2	0
+Harvard B	19	2,2,2,3	0
+IIU Malaysia B	19	2,2,3,2	0
+Otago A	19	2,3,2,2	0
+Oxford A	19	2,3,2,2	0
+Oxford C	19	2,2,2,3	0
+Pennsylvania A	19	2,2,2,3	0
+Princeton A	19	2,2,2,3	0
+Queen's A	19	2,2,2,3	0
+Queensland C	19	2,2,3,2	0
+Stockholm A	19	2,2,2,3	0
+Alaska A	18	2,2,2,3	0
+Australian Natl A	18	3,2,2,2	0
+Bangladesh UET A	18	2,2,3,2	0
+Belgrade A	18	2,2,3,2	0
+Cambridge B	18	1,3,2,3	0
+Columbia A	18	2,2,2,3	0
+Durham B	18	2,2,2,3	0
+Hebrew Jerusalem A	18	2,2,3,2	0
+IIU Malaysia A	18	3,2,2,2	0
+King's London A	18	2,2,3,2	0
+London Union A	18	2,2,2,3	0
+Melbourne A	18	2,2,2,3	0
+Oxford B	18	3,2,2,2	0
+Queensland A	18	1,2,3,3	0
+Radboud A	18	2,3,2,2	0
+Sciences Po A	18	2,2,2,3	0
+TCD Hist A	18	2,2,3,2	0
+Tel Aviv B	18	2,2,3,2	0
+BPP A	17	2,2,2,3	0
+Bates B	17	2,3,2,2	0
+Brandeis A	17	2,3,2,2	0
+Cambridge C	17	2,2,2,3	0
+Cape Town A	17	2,2,3,2	0
+Cape Town B	17	2,2,3,2	0
+Carleton A	17	2,3,2,2	0
+Cornell A	17	2,2,2,3	0
+Cornell B	17	2,2,2,3	0
+Dhaka A	17	3,2,2,2	0
+Glasgow B	17	2,3,2,2	0
+Hart House B	17	2,3,2,2	0
+LSE B	17	3,2,2,2	0
+Leiden A	17	2,3,2,2	0
+London Union B	17	3,2,2,2	0
+Loyola Marymount A	17	2,2,3,2	0
+Monash A	17	2,3,2,2	0
+Nanyang TU B	17	2,2,3,2	0
+New South Wales A	17	2,3,2,2	0
+New South Wales B	17	2,2,3,2	0
+Nottingham A	17	3,2,2,2	0
+Princeton B	17	2,3,2,2	0
+St Andrews A	17	1,3,2,3	0
+TCD Phil B	17	2,2,3,2	0
+Tel Aviv A	17	2,3,2,2	0
+Tufts A	17	3,2,2,2	0
+UCD L&H B	17	2,3,2,2	0
+UT Sydney B	17	2,3,2,2	0
+Victoria Wellington A	17	2,3,2,2	0
+Bates C	16	2,2,2,3	0
+Beijing FSU A	16	3,2,2,2	0
+Boston A	16	2,2,2,3	0
+British Columbia A	16	2,3,2,2	0
+Brown A	16	2,2,3,2	0
+Columbia B	16	3,2,2,2	0
+Dalhousie A	16	2,3,2,2	0
+De La Salle A	16	3,2,2,2	0
+George Washington A	16	2,3,2,2	0
+Inner Temple A	16	2,3,2,2	0
+Linkopings A	16	3,2,2,2	0
+Macquarie A	16	2,2,3,2	0
+McGill A	16	2,2,2,3	0
+Middlebury A	16	2,2,2,3	0
+Monash B	16	2,2,3,2	0
+NU Singapore A	16	3,2,2,2	0
+Queen's B	16	2,3,2,2	0
+Queensland B	16	3,2,2,2	0
+Queensland UT A	16	1,3,2,3	0
+Seoul A	16	2,2,2,3	0
+Shanghai UFE A	16	2,2,2,3	0
+Stanford A	16	3,2,2,2	0
+Swarthmore A	16	2,2,3,2	0
+UC London A	16	2,3,2,2	0
+UCD L&H A	16	3,2,2,2	0
+UT Sydney A	16	2,2,2,3	0
+Vassar A	16	2,2,3,2	0
+Vermont A	16	2,3,2,2	0
+Western Australia A	16	2,2,2,3	0
+Western Ontario A	16	3,2,2,2	0
+Wollongong A	16	3,2,2,2	0
+Yale C	16	3,2,2,2	0
+Yale-NUS A	16	2,2,2,3	0
+Alberta A	15	2,2,3,2	0
+American A	15	2,3,2,2	0
+Amherst B	15	2,2,3,2	0
+Bard A	15	1,3,2,3	0
+Bates A	15	2,2,3,2	0
+Belgrade B	15	2,2,2,3	0
+Ben-Gurion A	15	2,3,2,2	0
+BiTS Iserlohn A	15	2,2,3,2	0
+British Columbia B	15	2,3,2,2	0
+Chicago A	15	2,2,2,3	0
+Claremont A	15	2,3,2,2	0
+Duke A	15	2,2,3,2	0
+Fordham A	15	3,2,2,2	0
+Gadjah Mada A	15	2,2,3,2	0
+Glasgow A	15	2,3,2,2	0
+Hong Kong A	15	2,2,3,2	0
+IBA Dhaka A	15	2,2,3,2	0
+IIM Ahmedabad A	15	2,2,3,2	0
+IIT Bombay A	15	1,3,3,2	0
+IIT Bombay B	15	2,2,3,2	0
+Indonesia A	15	2,2,3,2	0
+Indonesia B	15	2,2,2,3	0
+Karachi A	15	2,2,3,2	0
+La Verne A	15	2,2,2,3	0
+Leiden B	15	3,2,2,2	0
+Lumina A	15	2,3,2,2	0
+Macquarie B	15	2,3,2,2	0
+Melbourne C	15	3,2,2,2	0
+Monash C	15	3,2,2,2	0
+Northwest (USA) A	15	2,2,2,3	0
+Otago B	15	2,2,2,3	0
+Ottawa B	15	2,3,2,2	0
+RWTH Aachen A	15	2,2,3,2	0
+Stanford B	15	2,2,3,2	0
+Tübingen A	15	2,2,3,2	0
+UCC Philosoph A	15	2,2,2,3	0
+UCC Philosoph B	15	2,3,2,2	0
+UCD Law A	15	2,2,3,2	0
+UCD Law B	15	2,2,3,2	0
+Victoria Wellington B	15	2,3,2,2	0
+Warwick B	15	2,2,3,2	0
+Western Australia B	15	2,3,2,2	0
+Aberdeen A	14	2,3,2,2	0
+Akita A	14	2,2,2,3	0
+Ateneo A	14	2,2,3,2	0
+Australian Natl B	14	3,2,2,2	0
+BRAC A	14	2,2,2,3	0
+Belgrade C	14	2,2,2,3	0
+Brawijaya A	14	2,2,2,3	0
+Clemson A	14	2,2,2,3	0
+Clemson B	14	3,2,2,2	0
+FSU Jena A	14	2,3,2,2	0
+Fort Hare A	14	2,3,2,2	0
+Franklin & Marshall A	14	2,3,2,2	0
+HWS A	14	2,3,2,2	0
+Haifa B	14	2,3,2,2	0
+Hanyang A	14	2,3,2,2	0
+Harvard C	14	2,3,2,2	0
+IBA Dhaka B	14	2,2,3,2	0
+ITESM CSF A	14	2,2,3,2	0
+Independent Bangladesh A	14	3,2,2,2	0
+Jagiellonian A	14	2,2,3,2	0
+King's (New York) A	14	2,3,2,2	0
+Lancaster A	14	3,2,2,2	0
+Macau A	14	2,2,2,3	0
+Manchester A	14	2,2,2,3	0
+Melbourne B	14	3,2,2,2	0
+Montréal A	14	3,2,2,2	0
+NLS India A	14	2,2,2,3	0
+NLS India B	14	3,2,2,2	0
+Nanyang TU A	14	2,3,2,2	0
+New South Wales C	14	2,2,3,2	0
+Northeastern (Boston) A	14	2,2,3,2	0
+Otago C	14	2,2,3,2	0
+Romanian-American A	14	2,3,2,2	0
+SSE Riga A	14	2,3,2,2	0
+Sheffield A	14	2,2,2,3	0
+Singapore MU A	14	2,3,2,2	0
+Southern Illinois A	14	2,2,3,2	0
+St Andrews B	14	2,2,3,2	0
+Stockholm B	14	2,2,2,3	0
+UC London B	14	2,2,3,2	0
+UKIM Skopje A	14	2,3,2,2	0
+Yonsei Underwood A	14	3,2,2,2	0
+York A	14	2,2,2,3	0
+ASE Bucharest A	13	2,2,2,3	0
+Aberystwyth A	13	3,2,2,2	0
+Amherst A	13	2,3,2,2	0
+Athens A	13	2,2,2,3	0
+Autónomo México A	13	2,2,2,3	0
+Babeș-Bolyai A	13	3,2,2,2	0
+Ben-Gurion B	13	3,2,2,2	0
+Berlin B	13	2,2,3,2	0
+Brandeis B	13	2,2,3,2	0
+Bucharest A	13	2,2,2,3	0
+Canterbury B	13	2,3,2,2	0
+Dartmouth A	13	3,2,2,2	0
+Denver A	13	2,3,2,2	0
+Deree A	13	2,2,3,2	0
+Ewha A	13	2,2,3,2	0
+Ghulam Ishaq Khan A	13	2,2,3,2	0
+Helsinki A	13	3,2,2,2	0
+Hull A	13	2,2,3,2	0
+IDC Herzliya A	13	2,2,2,3	0
+IDC Herzliya Recanati A	13	2,2,3,2	0
+IUT A	13	2,2,2,3	0
+Imperial A	13	3,2,2,2	0
+King's London B	13	2,2,2,3	0
+LCLS (Dhaka) A	13	2,2,3,2	0
+Lund A	13	3,2,2,2	0
+MGIMO (Moscow) A	13	2,3,2,2	0
+McGill B	13	2,3,2,2	0
+Megatrend A	13	3,2,2,2	0
+Munich A	13	3,2,2,2	0
+NTU Athens A	13	2,3,2,2	0
+NU Singapore B	13	2,2,2,3	0
+New Jersey A	13	3,2,2,2	0
+North South A	13	2,2,2,3	0
+North West (RSA) A	13	2,2,3,2	0
+Peking A	13	3,2,2,2	0
+Regis A	13	2,3,2,2	0
+Southern Illinois B	13	2,2,2,3	0
+TEC Mexico A	13	2,3,2,2	0
+Tokyo IT A	13	2,2,2,3	0
+UC Roosevelt A	13	2,2,2,2	0
+UCC Law A	13	1,2,3,3	0
+Vienna A	13	3,2,2,2	0
+Warwick A	13	3,2,2,2	0
+Western Sydney A	13	2,3,2,2	0
+Atma Jaya A	12	2,2,2,3	0
+Bangladesh UET B	12	2,2,3,2	0
+CMU Qatar B	12	2,3,2,2	0
+CU Hong Kong A	12	2,2,2,3	0
+Canterbury A	12	3,2,2,2	0
+Colgate A	12	2,2,3,2	0
+Cologne A	12	3,2,2,2	0
+De La Salle B	12	2,3,2,2	0
+Duke B	12	2,3,2,2	0
+Erasmus A	12	2,2,2,3	0
+Free State A	12	2,3,2,2	0
+Göttingen A	12	3,2,2,2	0
+Hawaii A	12	2,2,3,2	0
+Hong Kong UST A	12	2,3,2,2	0
+IBA Karachi A	12	2,3,2,2	0
+IDC Herzliya B	12	2,2,2,3	0
+Keio A	12	1,3,2,3	0
+Kutafin MSLU A	12	2,2,2,3	0
+Kyoto A	12	3,2,2,2	0
+Laurier A	12	3,2,2,2	0
+Ljubljana A	12	2,2,3,2	0
+Malaya A	12	3,2,2,2	0
+Malaya B	12	2,2,3,2	0
+Midlands State A	12	3,2,2,2	0
+Midlands State B	12	3,2,2,2	0
+Montréal B	12	2,3,2,2	0
+Morehouse A	12	2,3,2,2	0
+Moscow IPT A	12	2,2,2,3	0
+Nazarbayev A	12	2,2,2,3	0
+Nth British Columbia A	12	3,2,2,2	0
+OpenU A	12	3,2,2,2	0
+Osaka A	12	2,2,2,3	0
+Ottawa A	12	2,3,2,2	0
+Padjadjaran A	12	2,2,2,3	0
+Sogang A	12	2,2,2,3	0
+St Petersburg SEU A	12	3,2,2,2	0
+Tartu A	12	2,3,2,2	0
+Texas A&M Qatar A	12	2,2,2,3	0
+USMA West Point A	12	2,3,2,2	0
+UT Cluj-Napoca A	12	3,2,2,2	0
+Visoka škola PEP B	12	1,2,3,3	0
+Yaroslav Mudryi NLU A	12	2,3,2,2	0
+Asia Pacific A	11	2,2,3,2	0
+Athens UEB A	11	3,2,2,2	0
+Babeș-Bolyai B	11	2,2,3,2	0
+Berlin A	11	3,2,2,2	0
+Birmingham A	11	2,2,3,2	0
+Coimbra A	11	2,2,2,3	0
+Fordham B	11	2,2,3,2	0
+Fudan A	11	2,2,2,3	0
+Ghulam Ishaq Khan B	11	2,2,2,3	0
+Groningen A	11	3,2,2,2	0
+IDC Herzliya Recanati B	11	2,3,2,2	0
+IUT B	11	2,3,2,2	0
+Intl Christian B	11	2,3,2,2	0
+Jyväskylä A	11	3,2,2,2	0
+KIMEP A	11	2,2,2,3	0
+Kapitza A	11	2,2,3,2	0
+Lund B	11	2,3,2,2	0
+Morehouse B	11	2,3,2,2	0
+Muenster A	11	3,2,2,2	0
+Mumbai A	11	3,2,2,2	0
+NE Qinhuangdao A	11	2,2,3,2	0
+Nazarbayev B	11	3,2,2,2	0
+New York A	11	3,2,2,2	0
+Rosario A	11	3,2,2,2	0
+Seoul B	11	3,2,2,2	0
+Singapore IM A	11	3,2,2,2	0
+SolBridge A	11	2,2,3,2	0
+TCD Hist B	11	3,2,2,2	0
+Tokyo A	11	2,2,3,2	0
+US Air Force A	11	3,2,2,2	0
+UWI Mona A	11	2,2,3,2	0
+Willamette A	11	2,2,3,2	0
+Zagreb Law A	11	2,2,3,2	0
+BRAC B	10	2,2,3,2	0
+Binus Intl A	10	2,2,3,2	0
+CU Hong Kong B	10	3,2,2,2	0
+Chittagong A	10	2,2,2,3	0
+CityU Hong Kong A	10	2,3,2,2	0
+Cologne B	10	2,2,3,2	0
+Curtin Sarawak A	10	2,2,2,3	0
+Ewha B	10	2,2,3,2	0
+Extremadura A	10	2,2,3,2	0
+Ginling A	10	2,3,2,2	0
+Haifa A	10	2,3,2,2	0
+Hong Kong UST B	10	3,2,2,2	0
+Intl Christian A	10	2,2,2,3	0
+Kathmandu A	10	3,2,2,2	0
+PUCP Perú A	10	3,2,2,2	0
+Porto A	10	2,3,2,2	0
+SOAS London A	10	2,3,2,2	0
+Sophia A	10	2,2,2,3	0
+Tribhuvan A	10	2,2,2,3	0
+Tsinghua A	10	3,2,2,2	0
+Utrecht A	10	2,2,3,2	0
+Wageningen A	10	2,2,2,3	0
+Waseda A	10	2,2,2,3	0
+Weill Cornell Qatar A	10	2,2,2,3	0
+Al. I. Cuza A	9	2,2,2,3	0
+Aoyama A	9	2,3,2,2	0
+Bielefeld A	9	2,2,2,3	0
+Bogazici A	9	2,3,2,2	0
+CMU Qatar A	9	3,2,2,2	0
+COMAS A	9	3,2,2,2	0
+Galatasaray A	9	3,2,2,2	0
+Kiel A	9	3,2,2,2	0
+Lisbon A	9	2,2,2,3	0
+Moscow State A	9	3,2,2,2	0
+Nacl Colombia A	9	2,3,2,2	0
+Natl Defense Tech A	9	3,2,2,2	0
+Odessa NU A	9	3,2,2,2	0
+PS Bucharest A	9	2,2,3,2	0
+PUCP Perú B	9	2,2,3,2	0
+Porto B	9	3,2,2,2	0
+Santa María La Antigua A	9	3,2,2,2	0
+TU Dresden A	9	3,2,2,2	0
+Tokyo IT B	9	3,2,2,2	0
+Turku A	9	3,2,2,2	0
+UMF Carol Davila A	9	2,2,2,3	0
+UT Jamaica B	9	1,3,3,2	0
+COSTAATT A	8	3,2,2,2	0
+China Petroleum A	8	3,2,2,2	0
+Moscow IPT B	8	3,2,2,2	0
+Muenster B	8	2,2,2,3	0
+NUI Galway A	8	3,2,2,2	0
+Nottingham Ningbo A	8	3,2,2,2	0
+Splitska A	8	3,2,2,2	0
+UWI Mona B	8	2,2,3,2	0
+United Intl A	8	2,2,2,3	0
+Warsaw A	8	2,2,2,2	0
+Weill Cornell Qatar B	8	3,2,2,2	0
+Central de Venezuela A	7	3,2,2,2	0
+NYU Shanghai A	7	2,2,2,3	0
+Pacific A	7	3,2,2,2	0
+Paris Tech A	7	2,2,2,3	0
+UMF Iuliu Hațieganu A	7	3,2,2,1	0
+Westminster A	7	2,2,3,2	0
+Yogyakarta State A	7	2,2,3,2	0
+Zagreb A	7	3,2,2,2	0
+Hitotsubashi A	6	2,2,2,3	0
+Nagoya A	6	3,2,2,2	0
+Swing B	6	2,1,1,2	0
+UT Jamaica A	6	2,2,3,2	0
+Macedonia A	5	3,2,2,2	0
+Swing A	5	1,0,2,1	0
+Western Washington A	5	1,2,2,1	0
+Otgontenger A	4	3,2,2,2	0
+UWI Western Jamaica A	3	3,2,2,2	0
+Uniciencia A	2	2,2,2,2	0
+Swing C	1	0,1,1,0	0
+AU Afghanistan A	0	0,0,0,0	0
+Autónomo México B	0	0,0,0,0	0
+Chung-Ang A	0	0,0,0,0	0
+Ghana A	0	0,0,0,0	0
+Kabul A	0	0,0,0,0	0
+Kabul Education A	0	0,0,0,0	0
+Kabul Polytechnic A	0	0,0,0,0	0
+Lahore UMS A	0	0,0,0,0	0
+Rana A	0	0,0,0,0	0
+Santo Tomas A	0	0,0,0,0	0
+Tshwane UT Pretoria A	0	0,0,0,0	0
+Zimbabwe A	0	0,0,0,0	0

@@ -1,0 +1,398 @@
+Hart House A	12	1,1,1,1	1
+Hart House B	11	1,1,1,1	1
+Harvard A	11	1,1,1,1	1
+Linkopings A	11	1,1,1,1	1
+London Union B	11	0,1,1,2	1
+UCD Law A	11	1,1,1,1	1
+Visoka škola PEP A	11	1,1,1,1	1
+Yale B	11	1,1,1,1	1
+British Columbia A	10	1,1,1,1	1
+Glasgow A	10	1,0,1,2	1
+London Union A	10	1,2,0,1	1
+McGill A	10	1,1,1,1	1
+Melbourne C	10	1,1,1,1	1
+Monash A	10	1,1,1,1	1
+New South Wales A	10	1,1,1,1	1
+Pennsylvania A	10	1,1,1,1	1
+Sciences Po A	10	0,1,1,2	1
+Stanford A	10	1,1,1,1	1
+Sydney Union A	10	1,1,1,1	1
+TCD Hist A	10	1,1,1,1	1
+Tufts A	10	1,1,1,1	1
+Yale A	10	1,2,1,0	1
+Ateneo A	9	1,1,1,1	1
+Auckland A	9	1,1,1,1	1
+Auckland B	9	1,1,1,1	1
+British Columbia B	9	1,1,1,1	1
+Cambridge C	9	1,1,1,1	1
+Durham A	9	1,1,1,1	1
+Durham B	9	1,1,1,1	1
+Glasgow B	9	1,1,1,1	1
+Harvard B	9	1,1,1,1	1
+LSE A	9	1,1,1,1	1
+La Verne A	9	1,1,1,1	1
+Loyola Marymount A	9	1,1,1,1	1
+Macquarie A	9	1,1,1,1	1
+Macquarie B	9	1,1,1,1	1
+Manchester A	9	0,1,1,2	1
+Melbourne A	9	1,1,1,1	1
+Nottingham A	9	1,1,1,1	1
+Oxford A	9	0,2,1,1	1
+Oxford C	9	1,1,1,1	1
+Princeton A	9	1,1,1,1	1
+Queen's A	9	1,1,1,1	1
+Queensland B	9	1,1,1,1	1
+Queensland C	9	1,1,1,1	1
+Seoul A	9	1,1,1,1	1
+Sydney Union B	9	1,1,1,1	1
+Sydney Union C	9	1,1,1,1	1
+TCD Phil A	9	1,1,1,1	1
+Tel Aviv A	9	1,1,1,1	1
+UCD L&H B	9	0,1,1,2	1
+UT Mara A	9	1,1,1,1	1
+Yale-NUS A	9	1,1,1,1	1
+Alaska A	8	1,1,1,1	1
+American A	8	1,1,1,1	1
+Amherst B	8	1,1,1,1	1
+Bates A	8	1,1,1,1	1
+Cambridge B	8	1,1,1,1	1
+Cape Town B	8	1,1,1,1	1
+Chicago A	8	1,1,1,1	1
+Columbia A	8	1,1,1,1	1
+Cornell A	8	1,1,1,1	1
+Denver A	8	1,1,1,1	1
+Deree A	8	1,1,1,1	1
+Dhaka A	8	1,1,1,1	1
+Ewha A	8	1,1,1,1	1
+Franklin & Marshall A	8	1,1,1,1	1
+Free State A	8	1,1,1,1	1
+Hanyang A	8	1,1,1,1	1
+Harvard C	8	1,1,1,1	1
+IBA Dhaka B	8	1,2,1,0	1
+IIT Bombay A	8	1,1,1,1	1
+IIT Bombay B	8	1,1,1,1	1
+IIU Malaysia A	8	0,1,1,2	1
+IIU Malaysia B	8	1,1,1,1	1
+Inner Temple A	8	1,1,1,1	1
+King's (New York) A	8	1,1,1,1	1
+King's London A	8	1,1,1,1	1
+Lancaster A	8	1,1,1,1	1
+Leiden B	8	1,1,1,1	1
+Malaya A	8	0,1,2,1	1
+McGill B	8	1,1,1,1	1
+Middlebury A	8	1,1,1,1	1
+NLS India A	8	1,1,1,1	1
+NLS India B	8	1,1,1,1	1
+Nanyang TU A	8	1,1,1,1	1
+OpenU A	8	1,1,1,1	1
+Oxford B	8	1,1,1,1	1
+Queen's B	8	1,1,1,1	1
+Queensland A	8	1,1,1,1	1
+Queensland UT A	8	1,1,1,1	1
+Romanian-American A	8	1,1,1,1	1
+St Andrews A	8	1,1,1,1	1
+Tartu A	8	1,1,1,1	1
+Tel Aviv B	8	1,1,1,1	1
+UC London A	8	1,1,1,1	1
+UCC Philosoph A	8	1,1,1,1	1
+UCD Law B	8	1,1,1,1	1
+Vermont A	8	1,1,1,1	1
+Alberta A	7	1,1,1,1	1
+Amherst A	7	1,1,1,1	1
+Autónomo México A	7	1,1,1,1	1
+Bates B	7	1,1,1,1	1
+Bates C	7	1,1,1,1	1
+Belgrade A	7	1,1,1,1	1
+Ben-Gurion A	7	1,1,1,1	1
+Berlin A	7	1,1,1,1	1
+Berlin B	7	1,1,1,1	1
+Boston A	7	1,1,1,1	1
+Brandeis A	7	1,1,1,1	1
+Brown A	7	1,1,1,1	1
+Cambridge A	7	1,1,1,1	1
+Carleton A	7	1,1,1,1	1
+Claremont A	7	1,1,1,1	1
+Columbia B	7	1,1,1,1	1
+De La Salle A	7	1,1,1,1	1
+Duke B	7	1,1,1,1	1
+Fordham A	7	1,1,1,1	1
+George Washington A	7	1,1,2,0	1
+Groningen A	7	1,1,1,1	1
+Hawaii A	7	1,1,1,1	1
+Hull A	7	1,1,1,1	1
+Independent Bangladesh A	7	1,1,1,1	1
+Indonesia A	7	1,1,1,1	1
+Kutafin MSLU A	7	1,1,1,1	1
+LCLS (Dhaka) A	7	1,1,1,1	1
+LSE B	7	1,1,1,1	1
+Lumina A	7	1,1,1,1	1
+Malaya B	7	1,1,1,1	1
+Melbourne B	7	1,1,1,1	1
+Monash B	7	1,1,1,1	1
+Monash C	7	1,1,1,1	1
+NIBM (India) A	7	0,2,1,1	1
+Nanyang TU B	7	1,1,1,1	1
+Nazarbayev B	7	1,1,1,1	1
+New South Wales B	7	1,1,1,1	1
+North West (RSA) A	7	1,1,1,1	1
+Northeastern (Boston) A	7	1,1,1,1	1
+Otago A	7	1,1,1,1	1
+Otago B	7	1,1,1,1	1
+Otago C	7	1,1,1,1	1
+Ottawa B	7	1,1,1,1	1
+Princeton B	7	1,1,1,1	1
+Radboud A	7	1,1,1,1	1
+Regis A	7	1,1,1,1	1
+Singapore IM A	7	1,1,1,1	1
+Stanford B	7	1,1,1,1	1
+Stockholm B	7	1,1,1,1	1
+Swarthmore A	7	1,1,1,1	1
+UCC Philosoph B	7	1,1,1,1	1
+UCD L&H A	7	1,1,1,1	1
+UKIM Skopje A	7	1,1,1,1	1
+UT Sydney B	7	1,1,1,1	1
+Victoria Wellington A	7	1,1,1,1	1
+Victoria Wellington B	7	1,1,1,1	1
+Western Australia B	7	1,1,1,1	1
+Western Ontario A	7	1,2,1,0	1
+Wollongong A	7	1,1,1,1	1
+Yale C	7	1,1,1,1	1
+Akita A	6	1,1,1,1	1
+Asia Pacific A	6	1,1,1,1	1
+Athens UEB A	6	1,1,1,1	1
+Australian Natl A	6	1,1,1,1	1
+BPP A	6	1,1,1,1	1
+Bard A	6	1,1,1,1	1
+Beijing FSU A	6	1,1,1,1	1
+Belgrade C	6	1,1,1,1	1
+Ben-Gurion B	6	1,1,1,1	1
+Birmingham A	6	1,2,1,0	1
+Brandeis B	6	1,1,1,1	1
+Bucharest A	6	1,1,1,1	1
+COMAS A	6	1,1,1,1	1
+Cape Town A	6	1,1,1,1	1
+Cornell B	6	1,1,1,1	1
+Dartmouth A	6	1,1,1,1	1
+Duke A	6	0,1,2,1	1
+Fort Hare A	6	1,1,1,1	1
+Gadjah Mada A	6	1,1,1,1	1
+HWS A	6	1,1,1,1	1
+Haifa A	6	1,1,1,1	1
+Hebrew Jerusalem A	6	1,1,1,1	1
+Helsinki A	6	1,1,1,1	1
+Hong Kong A	6	1,1,1,1	1
+Hong Kong UST B	6	1,1,1,1	1
+IBA Dhaka A	6	1,1,1,1	1
+IDC Herzliya Recanati B	6	1,1,1,1	1
+IIM Ahmedabad A	6	1,0,1,2	1
+ITESM CSF A	6	1,1,1,1	1
+Imperial A	6	1,1,1,1	1
+Jyväskylä A	6	1,1,1,1	1
+Karachi A	6	1,1,1,1	1
+King's London B	6	1,1,1,1	1
+Kyoto A	6	1,1,1,1	1
+Laurier A	6	1,1,1,1	1
+Megatrend A	6	1,1,1,1	1
+Montréal A	6	1,1,1,1	1
+Morehouse A	6	1,1,1,1	1
+Muenster A	6	1,1,1,1	1
+Munich A	6	1,1,1,1	1
+NU Singapore A	6	2,1,0,1	1
+New York A	6	1,1,1,1	1
+North South A	6	1,1,1,1	1
+Osaka A	6	1,1,1,1	1
+Ottawa A	6	1,1,1,1	1
+Porto B	6	1,1,1,1	1
+RWTH Aachen A	6	1,1,1,1	1
+Sheffield A	6	1,1,1,1	1
+SolBridge A	6	1,1,1,1	1
+Stockholm A	6	1,1,1,1	1
+TCD Hist B	6	1,1,1,1	1
+TCD Phil B	6	1,1,1,1	1
+Tübingen A	6	1,1,1,1	1
+UC London B	6	1,1,1,1	1
+US Air Force A	6	1,1,1,1	1
+USMA West Point A	6	1,1,1,1	1
+UT Cluj-Napoca A	6	1,1,1,1	1
+UT Sydney A	6	1,1,1,1	1
+UWI Mona A	6	1,1,1,1	1
+Vienna A	6	1,1,1,1	1
+Visoka škola PEP B	6	1,1,1,1	1
+Warwick A	6	1,1,1,1	1
+Waseda A	6	1,1,1,1	1
+Western Australia A	6	1,1,1,1	1
+Western Sydney A	6	1,1,1,1	1
+ASE Bucharest A	5	1,1,1,1	1
+Aberdeen A	5	1,0,1,2	1
+Australian Natl B	5	1,1,1,1	1
+Babeș-Bolyai B	5	1,1,1,1	1
+Bangladesh UET A	5	1,1,1,1	1
+Bangladesh UET B	5	1,1,1,1	1
+Belgrade B	5	1,1,1,1	1
+BiTS Iserlohn A	5	1,1,1,1	1
+Brawijaya A	5	1,1,1,1	1
+CMU Qatar B	5	1,1,1,1	1
+COSTAATT A	5	1,1,1,1	1
+Canterbury B	5	1,1,1,1	1
+Chittagong A	5	1,1,1,1	1
+Clemson A	5	1,1,1,1	1
+Coimbra A	5	1,1,1,1	1
+Colgate A	5	1,1,1,1	1
+De La Salle B	5	1,1,1,1	1
+Fordham B	5	1,1,1,1	1
+Ghulam Ishaq Khan A	5	1,1,1,1	1
+Haifa B	5	1,1,1,1	1
+Hong Kong UST A	5	1,1,1,1	1
+IBA Karachi A	5	1,1,1,1	1
+IDC Herzliya A	5	1,1,1,1	1
+IDC Herzliya Recanati A	5	1,1,0,2	1
+IUT A	5	1,1,1,1	1
+IUT B	5	1,1,1,1	1
+Keio A	5	1,2,1,0	1
+Leiden A	5	1,1,1,1	1
+MGIMO (Moscow) A	5	1,1,1,1	1
+Macau A	5	1,1,1,1	1
+Midlands State A	5	1,1,1,1	1
+Moscow IPT A	5	1,1,1,1	1
+Moscow State A	5	1,1,1,1	1
+Mumbai A	5	1,1,1,1	1
+NTU Athens A	5	1,1,1,1	1
+NU Singapore B	5	1,1,1,1	1
+Nacl Colombia A	5	1,1,1,1	1
+Natl Defense Tech A	5	1,1,1,1	1
+New South Wales C	5	1,1,1,1	1
+Odessa NU A	5	1,1,1,1	1
+PS Bucharest A	5	1,1,1,1	1
+Padjadjaran A	5	1,1,2,0	1
+Porto A	5	1,1,1,1	1
+Shanghai UFE A	5	1,1,1,1	1
+Singapore MU A	5	1,1,1,1	1
+Sogang A	5	1,1,1,1	1
+Southern Illinois A	5	1,1,1,1	1
+Southern Illinois B	5	1,1,1,1	1
+St Andrews B	5	1,1,1,1	1
+St Petersburg SEU A	5	1,1,1,1	1
+TEC Mexico A	5	1,1,1,1	1
+Texas A&M Qatar A	5	1,1,1,1	1
+Tsinghua A	5	1,1,1,1	1
+UCC Law A	5	1,1,1,1	1
+Vassar A	5	1,1,2,0	1
+Warwick B	5	1,1,1,1	1
+Yonsei Underwood A	5	1,1,1,1	1
+York A	5	1,1,1,1	1
+Aberystwyth A	4	1,1,1,1	1
+Aoyama A	4	1,1,1,1	1
+Babeș-Bolyai A	4	1,1,1,1	1
+CMU Qatar A	4	1,1,1,1	1
+CU Hong Kong A	4	1,0,1,2	1
+Canterbury A	4	1,1,1,1	1
+CityU Hong Kong A	4	1,1,1,1	1
+Clemson B	4	1,1,1,1	1
+Cologne A	4	1,1,1,1	1
+Curtin Sarawak A	4	1,1,1,1	1
+Dalhousie A	4	1,1,1,1	1
+Ewha B	4	1,1,1,1	1
+FSU Jena A	4	1,1,1,1	1
+Hitotsubashi A	4	1,1,1,1	1
+Indonesia B	4	1,1,1,1	1
+Intl Christian A	4	1,1,1,1	1
+Jagiellonian A	4	1,1,1,1	1
+Kapitza A	4	1,1,1,1	1
+Kiel A	4	1,1,1,1	1
+Lisbon A	4	1,1,1,1	1
+Ljubljana A	4	1,1,1,1	1
+Lund A	4	1,1,1,1	1
+Morehouse B	4	1,1,1,1	1
+NE Qinhuangdao A	4	1,1,1,1	1
+NUI Galway A	4	1,1,1,1	1
+Nazarbayev A	4	1,1,1,1	1
+Northwest (USA) A	4	1,1,1,1	1
+Nottingham Ningbo A	4	1,1,1,1	1
+Nth British Columbia A	4	1,1,1,1	1
+PUCP Perú A	4	1,1,1,1	1
+Peking A	4	1,1,1,1	1
+Rosario A	4	1,1,1,1	1
+SOAS London A	4	1,1,1,1	1
+SSE Riga A	4	1,1,1,1	1
+Sophia A	4	1,1,1,1	1
+TU Dresden A	4	1,1,1,1	1
+Tokyo A	4	1,1,1,1	1
+UC Roosevelt A	4	1,0,1,1	1
+UT Jamaica B	4	0,1,2,1	1
+UWI Mona B	4	1,1,1,1	1
+Utrecht A	4	1,1,1,1	1
+Wageningen A	4	1,1,1,1	1
+Weill Cornell Qatar A	4	1,1,1,1	1
+Weill Cornell Qatar B	4	1,1,1,1	1
+Western Washington A	4	1,1,1,1	1
+Westminster A	4	1,1,1,1	1
+Willamette A	4	1,1,1,1	1
+Yaroslav Mudryi NLU A	4	1,1,1,1	1
+Zagreb Law A	4	1,1,1,1	1
+Atma Jaya A	3	1,0,2,1	1
+BRAC A	3	1,1,2,0	1
+BRAC B	3	2,1,1,0	1
+Binus Intl A	3	1,1,1,1	1
+Bogazici A	3	1,1,1,1	1
+CU Hong Kong B	3	1,1,1,1	1
+Central de Venezuela A	3	1,1,1,1	1
+Erasmus A	3	1,1,1,1	1
+Extremadura A	3	1,1,1,1	1
+Fudan A	3	1,1,1,1	1
+Ghulam Ishaq Khan B	3	1,1,1,1	1
+IDC Herzliya B	3	1,1,1,1	1
+Kathmandu A	3	1,1,1,1	1
+Lund B	3	1,1,1,1	1
+Midlands State B	3	1,1,1,1	1
+Montréal B	3	1,1,1,1	1
+Moscow IPT B	3	1,1,1,1	1
+Muenster B	3	1,1,1,1	1
+New Jersey A	3	1,1,1,1	1
+Pacific A	3	1,1,1,1	1
+Paris Tech A	3	1,1,1,1	1
+Santa María La Antigua A	3	1,1,1,1	1
+Splitska A	3	1,1,1,1	1
+Swing B	3	1,1,0,1	0
+Tokyo IT A	3	1,1,1,1	1
+Tokyo IT B	3	1,1,1,1	1
+Tribhuvan A	3	2,1,0,1	1
+UMF Carol Davila A	3	1,1,1,1	1
+UT Jamaica A	3	1,1,1,1	1
+Al. I. Cuza A	2	2,1,0,1	1
+Athens A	2	2,1,0,1	1
+China Petroleum A	2	1,1,1,1	1
+Cologne B	2	1,1,1,1	1
+Galatasaray A	2	1,1,1,1	1
+Ginling A	2	1,1,1,1	1
+Göttingen A	2	1,1,1,1	1
+Intl Christian B	2	1,1,1,1	1
+Macedonia A	2	1,0,1,2	1
+NYU Shanghai A	2	1,1,1,1	1
+PUCP Perú B	2	1,1,1,1	1
+Seoul B	2	1,1,1,1	1
+Turku A	2	1,1,1,1	1
+Zagreb A	2	2,1,0,1	1
+Bielefeld A	1	2,1,1,0	1
+Nagoya A	1	1,1,1,1	1
+Otgontenger A	1	1,1,1,1	1
+UMF Iuliu Hațieganu A	1	1,1,1,0	1
+United Intl A	1	1,1,1,1	1
+Warsaw A	1	1,0,1,1	1
+Yogyakarta State A	1	1,1,1,1	1
+AU Afghanistan A	0	0,0,0,0	0
+Autónomo México B	0	0,0,0,0	0
+Chung-Ang A	0	0,0,0,0	0
+Ghana A	0	0,0,0,0	0
+KIMEP A	0	2,0,1,1	1
+Kabul A	0	0,0,0,0	0
+Kabul Education A	0	0,0,0,0	0
+Kabul Polytechnic A	0	0,0,0,0	0
+Lahore UMS A	0	0,0,0,0	0
+Rana A	0	0,0,0,0	0
+Santo Tomas A	0	0,0,0,0	0
+Swing A	0	0,0,0,0	1
+Swing C	0	0,0,0,0	0
+Tshwane UT Pretoria A	0	0,0,0,0	0
+UWI Western Jamaica A	0	2,1,0,1	1
+Uniciencia A	0	1,1,1,1	1
+Zimbabwe A	0	0,0,0,0	0
