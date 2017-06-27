@@ -29,7 +29,7 @@ def read_input_file(filename, include_all=False):
         history = [int(x) for x in history.split(",")]
         data.append((team, int(points), history))
     if not include_all:
-        assert len(data) % 4 == 0
+        assert len(data) % 4 == 0, "There were %d teams" % len(data)
     return data
 
 def define_rooms(points):
@@ -122,10 +122,18 @@ def generate_draw(data, cost_method="weighted"):
     rooms = collate_rooms(data, indices)
     return rooms
 
-def show_rooms(rooms):
+def show_rooms(rooms, color=False):
+    if color:
+        YELLOW = "\033[0;33m"
+        NORMAL = "\033[0m"
+    else:
+        YELLOW = NORMAL = ""
+
     for room in rooms:
-        teams = ["{team:>12s} {points:>2d} {history:7s}".format(
-            team=team[:12], points=points, history=",".join(map(str, history)))
+        bracket = max([t[1] for t in room])
+        teams = ["{team:>12s} {c}{points:>2d}{n} {history:7s}".format(
+            team=team[:12], points=points, history=",".join(map(str, history)),
+            c=YELLOW if points != bracket else "", n=NORMAL if points != bracket else "")
             for team, points, history in room]
         print("   ".join(teams))
     print()
@@ -188,7 +196,7 @@ def compare_badness(rooms, other_filename, color=False):
     print(CYAN + "       our total:" + BOLD_WHITE, this_total, NORMAL)
     print(CYAN + "  original total:" + BOLD_WHITE, other_total, NORMAL)
 
-def show_original_rooms(data, filename):
+def show_original_rooms(data, filename, color=False):
     properties = {team: (points, history) for team, points, history in data}
     f = open(filename)
     rooms = []
@@ -196,7 +204,7 @@ def show_original_rooms(data, filename):
         names = line.split("\t")
         rooms.append([(name.strip(),) + properties[name.strip()] for name in names])
     rooms.sort(key=lambda x: max(y[1] for y in x), reverse=True)
-    show_rooms(rooms)
+    show_rooms(rooms, color)
 
 def _print_heading(message, color=False):
     if color:
@@ -231,9 +239,9 @@ if __name__ == "__main__":
     data = read_input_file(filename)
     rooms = generate_draw(data, args.cost_method)
     _print_heading("Our draw:", args.color)
-    show_rooms(rooms)
+    show_rooms(rooms, args.color)
     if actualdrawfile:
         _print_heading("\033[1;36mOriginal draw:\033[0m", args.color)
-        show_original_rooms(data, actualdrawfile)
+        show_original_rooms(data, actualdrawfile, args.color)
     if comparefile:
         compare_badness(rooms, comparefile, args.color)
