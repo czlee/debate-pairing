@@ -186,7 +186,7 @@ def compare_badness(rooms, other_filename, color=False):
         ))
 
     print(CYAN + "       our total:" + BOLD_WHITE, this_total, NORMAL)
-    print(CYAN + "comparison total:" + BOLD_WHITE, other_total, NORMAL)
+    print(CYAN + "  original total:" + BOLD_WHITE, other_total, NORMAL)
 
 def show_original_rooms(data, filename):
     properties = {team: (points, history) for team, points, history in data}

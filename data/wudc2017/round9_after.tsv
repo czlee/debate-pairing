@@ -1,0 +1,394 @@
+AKL A	22	1,3,2,3	0
+Oxford B	22	2,3,2,2	0
+UT MARA A	22	2,3,2,2	0
+Cambridge A	21	2,2,2,3	0
+Harvard A	21	2,3,2,2	0
+Oxford A	21	1,2,3,3	0
+Oxford C	21	3,2,2,2	0
+Cambridge B	20	2,3,2,2	0
+Durham A	20	3,2,2,2	0
+GUU A	20	2,2,3,2	0
+Hart House A	20	1,2,3,3	0
+Melbourne A	20	2,2,2,3	0
+Tel Aviv A	20	2,3,2,2	0
+USU B	20	1,3,3,2	0
+Yale A	20	2,3,2,2	0
+Bates A	19	2,2,3,2	0
+Duke A	19	3,2,2,2	0
+Harvard C	19	3,2,2,2	0
+IIUM A	19	3,2,2,2	0
+IIUM B	19	2,3,2,2	0
+UCD LawSoc A	19	3,2,2,2	0
+UQDS C	19	2,3,2,2	0
+USU A	19	3,2,2,2	0
+USU C	19	2,2,2,3	0
+UWADU A	19	1,2,3,3	0
+Ateneo A	18	2,2,3,2	0
+Brandeis A	18	2,2,3,2	0
+Brown A	18	3,2,2,2	0
+Cambridge D	18	3,2,2,2	0
+IITB A	18	2,3,2,2	0
+LEIDEN A	18	3,2,2,2	0
+LSE B	18	2,3,2,2	0
+MAD A	18	2,2,3,2	0
+Penn A	18	2,2,2,3	0
+Princeton C	18	2,2,3,2	0
+QDU A	18	2,3,2,2	0
+QUTDS A	18	2,2,3,2	0
+Stanford A	18	2,2,3,2	0
+UQDS B	18	3,2,2,2	0
+USU D	18	2,2,2,3	0
+USU E	18	2,2,3,2	0
+USU F	18	3,2,2,2	0
+YUU A	18	3,2,2,2	0
+Yale B	18	2,3,2,2	0
+ANU A	17	2,2,2,3	0
+APU A	17	2,2,2,3	0
+Alaska A	17	2,3,2,2	0
+BBU A	17	2,2,3,2	0
+Belgrade A	17	2,2,2,3	0
+Cambridge C	17	2,2,2,3	0
+Cornell B	17	2,2,2,3	0
+GWU A	17	2,3,2,2	0
+HUJI A	17	3,2,2,2	0
+Harvard B	17	1,3,2,3	0
+Indonesia C	17	2,2,3,2	0
+LEIDEN B	17	2,2,2,3	0
+LEIDEN C	17	2,2,2,3	0
+LSE A	17	2,3,2,2	0
+McGill A	17	2,2,2,3	0
+Melbourne C	17	2,3,2,2	0
+NLSIU A	17	2,3,2,2	0
+Oxford D	17	3,2,2,2	0
+QDU B	17	2,3,2,2	0
+Stanford B	17	2,2,2,3	0
+Tel Aviv B	17	3,2,2,2	0
+UCL A	17	2,3,2,2	0
+UCL B	17	2,2,2,3	0
+UCT A	17	2,2,2,3	0
+UWODS A	17	2,3,2,2	0
+VUW A	17	2,2,2,3	0
+Vermont B	17	3,2,2,2	0
+Yale D	17	2,3,2,2	0
+ASAFA A	16	3,2,2,2	0
+Alaska B	16	2,2,2,3	0
+BINUS A	16	2,2,3,2	0
+BPP A	16	2,3,2,2	0
+Bates C	16	2,3,2,2	0
+Belgrade B	16	2,3,2,2	0
+Clemson B	16	2,2,3,2	0
+DRUMS A	16	2,2,3,2	0
+E.D.S A	16	2,2,2,3	0
+GWU B	16	2,2,2,3	0
+Hawaii A	16	2,3,2,2	0
+Hopkins A	16	2,3,2,2	0
+IUT A	16	3,2,2,2	0
+KCL A	16	2,3,2,2	0
+Melbourne B	16	2,2,2,3	0
+NEU A	16	2,3,2,2	0
+PEP A	16	3,2,2,2	0
+Princeton A	16	2,2,2,3	0
+Princeton B	16	3,2,2,2	0
+SMU A	16	3,2,2,2	0
+SWORDS A	16	2,2,3,2	0
+Stanford C	16	2,3,2,2	0
+Swarthmore A	16	2,3,2,2	0
+TDS A	16	2,3,2,2	0
+UQDS A	16	2,2,3,2	0
+URDU A	16	2,2,2,3	0
+USDV B	16	2,3,2,2	0
+Vermont A	16	2,2,2,3	0
+WDU A	16	2,3,2,2	0
+ANU B	15	2,2,2,3	0
+BINUS B	15	2,2,2,3	0
+BLCU A	15	2,2,3,2	0
+Berkeley A	15	2,2,3,2	0
+Edinburgh A	15	2,2,2,3	0
+HKU A	15	3,2,2,2	0
+Hart House B	15	2,2,2,3	0
+IIUM C	15	2,3,2,2	0
+Indonesia A	15	2,2,2,3	0
+KOREA A	15	2,2,2,3	0
+MAD C	15	2,2,3,2	0
+MAD D	15	2,2,3,2	0
+MQU A	15	3,2,2,2	0
+Malaya A	15	2,2,3,2	0
+McGill B	15	2,2,2,3	0
+McGill C	15	2,2,3,2	0
+Middlebury A	15	2,3,2,2	0
+NSU A	15	2,2,3,2	0
+NTU A	15	3,2,2,2	0
+NUS A	15	2,3,2,2	0
+RRIS A	15	2,3,2,2	0
+SKT A	15	2,2,3,2	0
+SMU B	15	2,3,2,2	0
+SUFE B	15	3,2,2,2	0
+St Andrews C	15	2,2,2,3	0
+Stanford E	15	3,2,2,2	0
+Swarthmore C	15	2,2,2,3	0
+TCD Hist A	15	3,2,2,2	0
+TCD Phil B	15	2,2,2,3	0
+TCWM A	15	2,2,2,3	0
+Taylor's A	15	2,3,2,2	0
+UBC A	15	3,2,2,2	0
+UCC Phil A	15	2,2,2,3	0
+UCD LawSoc B	15	2,2,2,3	0
+UCT B	15	2,2,3,2	0
+UNSW A	15	3,2,2,2	0
+UNSW B	15	2,3,2,2	0
+UT Sydney A	15	2,2,2,3	0
+Warwick A	15	2,3,2,2	0
+YNC A	15	2,2,2,3	0
+Yale C	15	2,3,2,2	0
+Aberdeen A	14	2,2,3,2	0
+Bates B	14	2,2,3,2	0
+Bates D	14	2,3,2,2	0
+Belgrade C	14	3,2,2,2	0
+Brown B	14	2,2,2,3	0
+CUHKEDT A	14	2,2,3,2	0
+CUNY A	14	2,3,2,2	0
+Carleton A	14	2,3,2,2	0
+Cornell C	14	3,2,2,2	0
+Cornell D	14	2,2,2,3	0
+D U A	14	3,2,2,2	0
+DC Ms A	14	1,2,3,3	0
+DLSU A	14	2,3,2,2	0
+Durham B	14	2,2,2,3	0
+FDS A	14	2,2,3,2	0
+HKU B	14	2,2,3,2	0
+HSE A	14	2,2,3,2	0
+HUJI B	14	3,2,2,2	0
+Hart House C	14	2,2,2,3	0
+IBA DU A	14	3,2,2,2	0
+ITB A	14	2,2,2,3	0
+Imperial A	14	3,2,2,2	0
+LSE C	14	2,3,2,2	0
+Lund B	14	2,3,2,2	0
+Morehouse B	14	2,2,3,2	0
+Otago A	14	3,2,2,2	0
+Sodales A	14	3,2,2,2	0
+St Andrews B	14	3,2,2,2	0
+Swarthmore B	14	2,3,2,2	0
+TCD Hist B	14	2,2,3,2	0
+TCD Phil A	14	2,3,2,2	0
+Team 399	14	2,2,2,2	0
+Tokyo A	14	2,2,3,2	0
+UADS A	14	3,2,2,2	0
+UBC B	14	2,3,2,2	0
+UChicago A	14	3,2,2,2	0
+UChicago C	14	2,3,2,2	0
+UMacau A	14	2,2,2,3	0
+USDV A	14	2,2,3,2	0
+UVic A	14	2,2,3,2	0
+UWADU B	14	1,3,3,2	0
+VUW B	14	3,2,2,2	0
+ASAFA B	13	2,3,2,2	0
+AUDS A	13	3,2,2,2	0
+Alaska C	13	2,3,2,2	0
+Amherst B	13	3,2,2,2	0
+BGU B	13	2,3,2,2	0
+BRIS A	13	2,3,2,2	0
+Bard A	13	2,3,2,2	0
+Berlin C	13	3,2,2,2	0
+CDS B	13	2,2,2,3	0
+Comillas A	13	3,2,2,2	0
+Cornell A	13	2,2,3,2	0
+DKWien B	13	2,2,2,3	0
+DRUMS B	13	2,2,2,3	0
+FDS B	13	3,2,2,2	0
+Indonesia B	13	2,2,3,2	0
+Keio B	13	3,2,2,2	0
+LEIDEN D	13	3,2,2,2	0
+Lund A	13	2,2,3,2	0
+MAD B	13	2,2,2,3	0
+MDS A	13	3,2,2,2	0
+MDU A	13	2,3,2,2	0
+Middlebury B	13	2,3,2,2	0
+Morehouse A	13	2,2,2,3	0
+NYU LY A	13	2,2,2,3	0
+Nazarbayev B	13	2,2,3,2	0
+Otago B	13	3,2,2,2	0
+Rosario A	13	2,2,2,3	0
+SUFE A	13	3,2,2,2	0
+St Andrews A	13	3,2,2,2	0
+Stanford D	13	2,2,2,3	0
+TUCN A	13	2,2,3,2	0
+Tampere A	13	2,2,3,2	0
+Tokyo B	13	2,2,2,3	0
+UFS A	13	3,2,2,2	0
+ULV A	13	3,2,2,2	0
+UT MARA B	13	3,2,2,2	0
+UdeM A	13	3,2,2,2	0
+UoB A	13	2,3,2,2	0
+UoG A	13	2,2,3,2	0
+Warsaw C	13	2,2,2,3	0
+Waseda B	13	3,2,2,2	0
+ZUD A	13	3,2,2,2	0
+ANU C	12	3,2,2,2	0
+BDS A	12	2,2,2,3	0
+BIPEDS A	12	2,2,2,3	0
+BOGUN A	12	3,2,2,2	0
+BUET B	12	2,2,3,2	0
+Bauman A	12	2,2,3,2	0
+Brandeis B	12	2,2,3,2	0
+Brawijaya A	12	2,3,2,2	0
+CDS A	12	3,2,2,2	0
+Clemson A	12	2,3,2,2	0
+DCGA A	12	2,2,3,2	0
+DKWien A	12	2,2,2,3	0
+DKWien C	12	2,3,2,2	0
+Durham C	12	2,2,2,3	0
+E.D.S B	12	2,2,2,3	0
+EDS UGM A	12	3,2,2,2	0
+FDU B	12	3,2,2,2	0
+GSU A	12	2,2,2,3	0
+GUU B	12	3,2,2,2	0
+HWS A	12	2,2,2,3	0
+HWS B	12	2,3,2,2	0
+IBA DU B	12	2,2,2,3	0
+IPB A	12	2,3,2,2	0
+Koç A	12	2,2,2,3	0
+Kyoto A	12	2,2,3,2	0
+LLC A	12	2,2,3,2	0
+NEU B	12	2,2,3,2	0
+OpenU A	12	2,2,2,3	0
+RRIS B	12	3,2,2,2	0
+SNUDA A	12	2,2,3,2	0
+STIPRam A	12	3,2,2,2	0
+Stanford F	12	2,3,2,2	0
+Stockholm A	12	2,3,2,2	0
+TDS B	12	2,2,3,2	0
+TKC A	12	2,2,2,3	0
+Tec CEM B	12	2,3,2,2	0
+Tilbury A	12	2,2,2,3	0
+UCL C	12	2,2,3,2	0
+Utrecht A	12	2,3,2,2	0
+Vermont C	12	3,2,2,2	0
+wdebating A	12	3,2,2,2	0
+BBU B	11	2,2,3,2	0
+BFSU A	11	2,2,2,3	0
+BGU A	11	2,2,3,2	0
+BUET A	11	2,2,3,2	0
+Berlin A	11	2,2,3,2	0
+Berlin B	11	2,2,3,2	0
+CardiffUni A	11	3,2,2,2	0
+DCBayreuth A	11	2,2,3,2	0
+Duke B	11	3,2,2,2	0
+ECP A	11	2,3,2,2	0
+EDS UGM B	11	2,2,3,2	0
+IDC A	11	2,3,2,2	0
+Inner A	11	3,2,2,2	0
+Keio A	11	3,2,2,2	0
+Kiel A	11	2,2,3,2	0
+Krakow A	11	2,2,2,3	0
+MQU B	11	2,2,2,3	0
+Nagoya A	11	2,2,3,2	0
+NorthwestU A	11	3,2,2,2	0
+SdDUP A	11	3,2,2,2	0
+Technion A	11	2,2,3,2	0
+Tilbury B	11	3,2,2,2	0
+Titech A	11	2,2,3,2	0
+UCD LnH A	11	3,2,2,2	0
+UFH A	11	2,2,2,3	0
+ULV B	11	2,3,2,2	0
+USMA A	11	2,3,2,2	0
+UT MARA C	11	2,2,2,3	0
+WCM A	11	2,2,2,3	0
+WSDU A	11	2,2,2,3	0
+Zagreb A	11	2,2,2,3	0
+Clemson C	10	2,2,2,3	0
+DCB A	10	3,2,2,2	0
+FDU A	10	2,2,2,3	0
+GODS A	10	3,2,2,2	0
+HKCityU A	10	3,2,2,2	0
+HKUST EDT A	10	3,2,2,2	0
+KHDS A	10	2,3,2,2	0
+KSAL A	10	2,2,3,2	0
+McGill D	10	2,2,3,2	0
+NUIG A	10	2,3,2,2	0
+NUIG B	10	3,2,2,2	0
+Nazarbayev A	10	3,2,2,2	0
+PUCP A	10	2,2,2,3	0
+Point Loma A	10	2,2,3,2	0
+SIM A	10	2,2,3,2	0
+SKT B	10	2,3,2,2	0
+Sheff A	10	2,2,3,2	0
+SolBridge A	10	3,2,2,2	0
+TAMUQ A	10	3,2,2,2	0
+Tec CEM A	10	2,2,3,2	0
+UAM A	10	2,3,2,2	0
+UChicago B	10	3,2,2,2	0
+UWI MONA A	10	2,3,2,2	0
+UoN A	10	2,2,2,3	0
+Warsaw B	10	2,3,2,2	0
+arts A	10	2,2,2,3	0
+A U A	9	3,2,2,2	0
+A U B	9	2,2,3,2	0
+ASDV A	9	3,2,2,2	0
+Aalto A	9	2,2,3,2	0
+Amherst A	9	2,3,2,2	0
+CMUQ A	9	2,3,2,2	0
+GSU B	9	2,2,2,3	0
+HKUST EDT B	9	2,3,2,2	0
+Hit-u A	9	2,1,2,1	0
+KU Nepal A	9	2,3,2,2	0
+MDS B	9	2,2,2,3	0
+NWU-PUKKE A	9	2,3,2,2	0
+PCU A	9	2,2,3,2	0
+SDU A	9	2,3,2,2	0
+Singidunum A	9	2,2,2,3	0
+UTECH B	9	2,3,2,2	0
+UdeS A	9	2,2,2,3	0
+WSDU B	9	2,2,3,2	0
+CUPB A	8	3,2,2,2	0
+DEREE A	8	2,3,2,2	0
+FCC A	8	3,2,2,2	0
+Hit-u B	8	2,2,3,2	0
+Kyoto B	8	3,2,2,2	0
+NUDT A	8	2,2,3,2	0
+Rosario B	8	3,2,2,2	0
+Swing A	8	1,1,1,1	0
+Tec CEM C	8	2,2,3,2	0
+U.LISBON A	8	3,2,2,2	0
+UFV A	8	2,2,3,2	0
+UTECH A	8	3,2,2,2	0
+Warsaw A	8	2,2,3,2	0
+Waseda A	8	2,2,3,2	0
+DAE A	7	2,2,3,2	0
+LLA A	7	2,3,2,2	0
+MEDUNSA A	7	1,2,2,1	0
+Sheff B	7	3,2,2,2	0
+UCV A	7	3,2,2,2	0
+UCV B	7	3,2,2,2	0
+UWI MONA B	7	3,2,2,2	0
+WCM C	7	2,2,2,3	0
+MSU BD A	6	2,2,2,3	0
+OCAD A	6	2,2,3,2	0
+UCO A	6	2,2,3,2	0
+UMB A	6	3,2,2,2	0
+Kyushu A	5	3,2,2,2	0
+Swing E	5	1,1,0,0	0
+Team 400	5	1,1,1,1	0
+Tribhuvan A	5	2,2,3,2	0
+WCM B	5	2,2,3,2	0
+Tokai A	4	2,2,2,3	0
+Swing F	3	0,0,1,1	0
+Swing B	2	0,1,0,0	0
+IBA Karachi A	0	0,0,0,0	0
+IMSU A	0	0,0,0,0	0
+IMSU B	0	0,0,0,0	0
+IMSU C	0	0,0,0,0	0
+IUB A	0	0,0,0,0	0
+IUB B	0	0,0,0,0	0
+KDS A	0	0,0,0,0	0
+Melbourne D	0	0,0,0,0	0
+Morehouse C	0	0,0,0,0	0
+PLACEHOLDER	0	1,0,0,0	0
+San Beda A	0	0,0,0,0	0
+Sogang A	0	0,0,0,0	0
+Southampton A	0	0,0,0,0	0
+Swing C	0	0,0,0,1	0
+Swing D	0	0,0,1,0	0
+Team 396	0	0,0,0,0	0
+Team 397	0	0,0,0,0	0
+UST A	0	0,0,0,0	0

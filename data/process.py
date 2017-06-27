@@ -56,7 +56,10 @@ def read_team_tab():
 
 
 def write_round(seq):
-    teams_in_next_round = read_teams(seq+1)
+    try:
+        teams_in_next_round = read_teams(seq+1)
+    except FileNotFoundError:
+        teams_in_next_round = []
     points = {team: totals[seq-1] for team, totals in team_tab.items()}
     teams = sorted(points.keys(), key=lambda t: (-points.get(t, 0), t))
     outfile = open(join(directory, "round{:d}_after.tsv".format(seq)), "w")
@@ -78,7 +81,7 @@ team_tab = read_team_tab()
 history = {}
 
 seq = 1
-while isfile(join(directory, "round{:d}_actual.tsv".format(seq+1))):
+while isfile(join(directory, "round{:d}_actual.tsv".format(seq))):
     update_position_history(seq)
     write_round(seq)
     seq += 1
