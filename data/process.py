@@ -31,7 +31,7 @@ def read_teams(seq):
 
 def read_team_tab():
     tab = {}
-    tabfile = open(join(directory, "team_tab.txt"))
+    tabfile = open(join(directory, "team_tab.tsv"))
     team_col = tabfile.readline().split("\t").index("Team")
 
     for line in tabfile:
