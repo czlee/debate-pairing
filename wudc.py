@@ -66,7 +66,7 @@ def define_rooms(points):
 
     return rooms
 
-def generate_cost_matrix(data, cost_method="weighted"):
+def generate_cost_matrix(data, cost_method="tabbie"):
     """Returns a cost matrix for the tournament.
     Rows (inner lists) are teams, in the same order as in data.
     Columns (elements) are positions in rooms, ordered first by room in the
@@ -85,11 +85,16 @@ def generate_cost_matrix(data, cost_method="weighted"):
     costs = []
     for _, points, history in data:
         row = []
+        min_hist = min(history)
         for room in rooms:
             if points not in room:
                 row.extend([DISALLOWED, DISALLOWED, DISALLOWED, DISALLOWED])
-            elif cost_method == "raw":
-                row.extend(history)
+            elif cost_method == "simple":
+                min_hist = min(history)
+                row.extend([x - min_hist for x in history])
+            elif cost_method == "squared":
+                min_hist = min(history)
+                row.extend([(x - min_hist) ** 2 for x in history])
             else:
                 for pos in range(4):
                     new_history = history.copy()
@@ -117,7 +122,7 @@ def collate_rooms(data, indices):
         rooms[r // 4][r % 4] = data[t]
     return rooms
 
-def generate_draw(data, cost_method="weighted"):
+def generate_draw(data, cost_method="tabbie"):
     costs = generate_cost_matrix(data, cost_method)
     indices = hungarian_shuffled(costs)
     rooms = collate_rooms(data, indices)
@@ -221,7 +226,7 @@ if __name__ == "__main__":
     parser.add_argument("-C", "--compare-file")
     parser.add_argument("-D", "--actual-draw")
     parser.add_argument("-m", "--no-color", dest="color", action="store_false", default=True)
-    parser.add_argument("-c", "--cost-method", choices=["raw", "weighted"], default="weighted")
+    parser.add_argument("-c", "--cost-method", choices=["simple", "squared", "tabbie"], default="tabbie")
     args = parser.parse_args()
 
     import os.path
