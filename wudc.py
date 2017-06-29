@@ -143,11 +143,11 @@ def show_rooms(rooms, color=False):
         for pos, (team, points, history) in enumerate(room):
             history = history.copy()
             history[pos] = GREEN + str(history[pos]) + NORMAL
-            points = str(points).rjust(2)
+            points_str = str(points).rjust(2)
             if points != bracket:
-                points = YELLOW + points + NORMAL
+                points_str = YELLOW + points_str + NORMAL
             teams.append("{team:>12s} {points!s:>2s} {history:7s}".format(
-                team=team[:12], points=points, history=",".join(map(str, history))))
+                team=team[:12], points=points_str, history=",".join(map(str, history))))
         print("   ".join(teams))
     print()
 
