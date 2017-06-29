@@ -66,7 +66,18 @@ def define_rooms(points):
 
     return rooms
 
-def generate_cost_matrix(data, cost_method="tabbie"):
+def cost_simple(pos, profile):
+    return profile[pos] - min(profile)
+
+def cost_squared(pos, profile):
+    return (profile[pos] - min(profile)) ** 2
+
+def cost_tabbie(pos, profile):
+    profile = profile.copy()
+    profile[pos] += 1
+    return get_position_badness(profile)
+
+def generate_cost_matrix(data, cost_fn):
     """Returns a cost matrix for the tournament.
     Rows (inner lists) are teams, in the same order as in data.
     Columns (elements) are positions in rooms, ordered first by room in the
@@ -89,18 +100,8 @@ def generate_cost_matrix(data, cost_method="tabbie"):
         for room in rooms:
             if points not in room:
                 row.extend([DISALLOWED, DISALLOWED, DISALLOWED, DISALLOWED])
-            elif cost_method == "simple":
-                min_hist = min(history)
-                row.extend([x - min_hist for x in history])
-            elif cost_method == "squared":
-                min_hist = min(history)
-                row.extend([(x - min_hist) ** 2 for x in history])
             else:
-                for pos in range(4):
-                    new_history = history.copy()
-                    new_history[pos] += 1
-                    cost = get_position_badness(new_history)
-                    row.append(cost)
+                row.extend([cost_fn(i, history) for i in range(4)])
         assert len(row) == nteams
         costs.append(row)
     assert len(costs) == nteams
@@ -122,8 +123,8 @@ def collate_rooms(data, indices):
         rooms[r // 4][r % 4] = data[t]
     return rooms
 
-def generate_draw(data, cost_method="tabbie"):
-    costs = generate_cost_matrix(data, cost_method)
+def generate_draw(data, cost_fn):
+    costs = generate_cost_matrix(data, cost_fn)
     indices = hungarian_shuffled(costs)
     rooms = collate_rooms(data, indices)
     return rooms
@@ -131,38 +132,53 @@ def generate_draw(data, cost_method="tabbie"):
 def show_rooms(rooms, color=False):
     if color:
         YELLOW = "\033[0;33m"
+        GREEN = "\033[0;32m"
         NORMAL = "\033[0m"
     else:
-        YELLOW = NORMAL = ""
+        YELLOW = GREEN = NORMAL = ""
 
     for room in rooms:
         bracket = max([t[1] for t in room])
-        teams = ["{team:>12s} {c}{points:>2d}{n} {history:7s}".format(
-            team=team[:12], points=points, history=",".join(map(str, history)),
-            c=YELLOW if points != bracket else "", n=NORMAL if points != bracket else "")
-            for team, points, history in room]
+        teams = []
+        for pos, (team, points, history) in enumerate(room):
+            history = history.copy()
+            history[pos] = GREEN + str(history[pos]) + NORMAL
+            points = str(points).rjust(2)
+            if points != bracket:
+                points = YELLOW + points + NORMAL
+            teams.append("{team:>12s} {points!s:>2s} {history:7s}".format(
+                team=team[:12], points=points, history=",".join(map(str, history))))
         print("   ".join(teams))
     print()
 
-def compare_badness(rooms, other_filename, color=False):
+def compare_badness(rooms, other_filename, cost_fn, color=False):
     """Compares the position badness implied by `data` and `indices`, to that
     stored in `other_filename`."""
     other_data = read_input_file(other_filename, include_all=True)
     other_histories = {team: history for team, _, history in other_data}
-    this_total = 0
-    other_total = 0
+    this_total_cost = 0
+    other_total_cost = 0
+    this_total_badness = 0
+    other_total_badness = 0
 
     teams = []
     for room in rooms:
-        for i, (team, _, history) in enumerate(room):
+        for pos, (team, _, history) in enumerate(room):
             this_history = history.copy()
-            this_history[i] += 1
-            this_badness = get_position_badness(this_history)
-            this_total += this_badness
-            other_badness = get_position_badness(other_histories[team])
-            other_total += other_badness
-            teams.append((team, history, this_badness, this_history, other_badness, other_histories[team]))
-    teams.sort(key=lambda x: (x[2], x[4]), reverse=True)
+            this_history[pos] += 1
+            this_cost = cost_fn(pos, history)
+            this_badness = cost_tabbie(pos, history)
+            this_total_cost += this_cost
+            this_total_badness += this_badness
+
+            other_pos = [x != y for x, y in zip(history, other_histories[team])].index(True)
+            other_cost = cost_fn(other_pos, history)
+            other_badness = cost_tabbie(other_pos, history)
+            other_total_cost += other_cost
+            other_total_badness += other_badness
+
+            teams.append((team, history, this_cost, this_badness, this_history, other_cost, other_badness, other_histories[team]))
+    teams.sort(key=lambda x: (x[3], x[6]), reverse=True)
 
     if color:
         CYAN = "\033[1;36m"
@@ -184,23 +200,29 @@ def compare_badness(rooms, other_filename, color=False):
                 strings.append(str(b))
         return base + ",".join(strings) + NORMAL
 
-    print(BOLD_CYAN + "           team      ours      original" + NORMAL)
+    print(BOLD_CYAN + "             team         ours            original" + NORMAL)
 
-    for team, original_history, this_badness, this_history, other_badness, other_history in teams:
+    for team, original_history, this_cost, this_badness, this_history, other_cost, other_badness, other_history in teams:
         this_base = BLUE if this_badness == 0 else BOLD_YELLOW if this_badness > other_badness else NORMAL
         other_base = BLUE if other_badness == 0 else BOLD_YELLOW if other_badness > this_badness else NORMAL
-        this_badness_str = "{c}{bad:>2d}{n}".format(bad=this_badness, c=this_base, n=NORMAL)
-        other_badness_str = "{c}{bad:>2d}{n}".format(bad=other_badness, c=other_base, n=NORMAL)
+        this_cost_str = "{c}{cost:>2d}{n}".format(cost=this_cost, c=this_base, n=NORMAL)
+        other_cost_str = "{c}{cost:>2d}{n}".format(cost=other_cost, c=other_base, n=NORMAL)
+        this_badness_str = "{c}({bad:>2d}){n}".format(bad=this_badness, c=this_base, n=NORMAL)
+        other_badness_str = "{c}({bad:>2d}){n}".format(bad=other_badness, c=other_base, n=NORMAL)
         this_history_str = history_string(this_base, original_history, this_history)
         other_history_str = history_string(other_base, original_history, other_history)
 
-        print("{team:>16s}: {bad1:>2s} {hist1:7s}  {bad2:>2s} {hist2:7s}".format(
-            team=team[:16], bad1=this_badness_str, bad2=other_badness_str,
+        print("{team:>17s}: {cost1:>2s} {bad1:>2s} {hist1:7s}   {cost2:>2s} {bad2:>2s} {hist2:7s}".format(
+            team=team[:17], bad1=this_badness_str, bad2=other_badness_str,
+            cost1=this_cost_str, cost2=other_cost_str,
             hist1=this_history_str, hist2=other_history_str,
         ))
 
-    print(CYAN + "       our total:" + BOLD_WHITE, this_total, NORMAL)
-    print(CYAN + "  original total:" + BOLD_WHITE, other_total, NORMAL)
+    print()
+    print(CYAN + "        our total cost:" + BOLD_WHITE, this_total_cost, NORMAL)
+    print(CYAN + "   original total cost:" + BOLD_WHITE, other_total_cost, NORMAL)
+    print(CYAN + "     our total badness:" + BOLD_WHITE, this_total_badness, NORMAL)
+    print(CYAN + "original total badness:" + BOLD_WHITE, other_total_badness, NORMAL)
 
 def show_original_rooms(data, filename, color=False):
     properties = {team: (points, history) for team, points, history in data}
@@ -217,6 +239,12 @@ def _print_heading(message, color=False):
         print("\033[1;36m" + message + "\033[0m")
     else:
         print(message)
+
+COST_FUNCTIONS = {
+    "simple": cost_simple,
+    "squared": cost_squared,
+    "tabbie": cost_tabbie,
+}
 
 
 if __name__ == "__main__":
@@ -243,11 +271,11 @@ if __name__ == "__main__":
         exit()
 
     data = read_input_file(filename)
-    rooms = generate_draw(data, args.cost_method)
+    rooms = generate_draw(data, COST_FUNCTIONS[args.cost_method])
     _print_heading("Our draw:", args.color)
     show_rooms(rooms, args.color)
     if actualdrawfile:
         _print_heading("\033[1;36mOriginal draw:\033[0m", args.color)
         show_original_rooms(data, actualdrawfile, args.color)
     if comparefile:
-        compare_badness(rooms, comparefile, args.color)
+        compare_badness(rooms, comparefile, COST_FUNCTIONS[args.cost_method], args.color)
