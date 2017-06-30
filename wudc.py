@@ -11,6 +11,7 @@ import munkres
 import random
 from collections import Counter
 from itertools import chain, repeat
+from math import log2
 from badness import get_position_badness
 
 munkres.DISALLOWED_PRINTVAL = "-"
@@ -76,6 +77,13 @@ def cost_tabbie(pos, profile):
     profile = profile.copy()
     profile[pos] += 1
     return get_position_badness(profile)
+
+def cost_entropy(pos, profile):
+    profile = profile.copy()
+    profile[pos] += 1
+    probs = [p/sum(profile) for p in profile]
+    selfinfo = [0 if p == 0 else -p*log2(p) for p in probs]
+    return 2 - sum(selfinfo)
 
 def generate_cost_matrix(data, cost_fn):
     """Returns a cost matrix for the tournament.
@@ -205,8 +213,9 @@ def compare_badness(rooms, other_filename, cost_fn, color=False):
     for team, original_history, this_cost, this_badness, this_history, other_cost, other_badness, other_history in teams:
         this_base = BLUE if this_badness == 0 else BOLD_YELLOW if this_badness > other_badness else NORMAL
         other_base = BLUE if other_badness == 0 else BOLD_YELLOW if other_badness > this_badness else NORMAL
-        this_cost_str = "{c}{cost:>2d}{n}".format(cost=this_cost, c=this_base, n=NORMAL)
-        other_cost_str = "{c}{cost:>2d}{n}".format(cost=other_cost, c=other_base, n=NORMAL)
+        cost_format = "2d" if isinstance(this_cost, int) else "4.2f"
+        this_cost_str = ("{c}{cost:>" + cost_format + "}{n}").format(cost=this_cost, c=this_base, n=NORMAL)
+        other_cost_str = ("{c}{cost:>" + cost_format + "}{n}").format(cost=other_cost, c=other_base, n=NORMAL)
         this_badness_str = "{c}({bad:>2d}){n}".format(bad=this_badness, c=this_base, n=NORMAL)
         other_badness_str = "{c}({bad:>2d}){n}".format(bad=other_badness, c=other_base, n=NORMAL)
         this_history_str = history_string(this_base, original_history, this_history)
@@ -244,6 +253,7 @@ COST_FUNCTIONS = {
     "simple": cost_simple,
     "squared": cost_squared,
     "tabbie": cost_tabbie,
+    "entropy": cost_entropy,
 }
 
 
@@ -254,7 +264,7 @@ if __name__ == "__main__":
     parser.add_argument("-C", "--compare-file")
     parser.add_argument("-D", "--actual-draw")
     parser.add_argument("-m", "--no-color", dest="color", action="store_false", default=True)
-    parser.add_argument("-c", "--cost-method", choices=["simple", "squared", "tabbie"], default="tabbie")
+    parser.add_argument("-c", "--cost-method", choices=COST_FUNCTIONS.keys(), default="tabbie")
     args = parser.parse_args()
 
     import os.path
