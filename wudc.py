@@ -85,6 +85,9 @@ def cost_entropy(pos, profile):
     selfinfo = [0 if p == 0 else -p*log2(p) for p in probs]
     return 2 - sum(selfinfo)
 
+def cost_entropy_squared(pos, profile):
+    return cost_entropy(pos, profile) ** 2
+
 def generate_cost_matrix(data, cost_fn):
     """Returns a cost matrix for the tournament.
     Rows (inner lists) are teams, in the same order as in data.
@@ -159,7 +162,7 @@ def show_rooms(rooms, color=False):
         print("   ".join(teams))
     print()
 
-def compare_badness(rooms, other_filename, cost_fn, color=False):
+def compare_badness(rooms, other_filename, cost_fn, color=False, quiet=False):
     """Compares the position badness implied by `data` and `indices`, to that
     stored in `other_filename`."""
     other_data = read_input_file(other_filename, include_all=True)
@@ -186,52 +189,48 @@ def compare_badness(rooms, other_filename, cost_fn, color=False):
             other_total_badness += other_badness
 
             teams.append((team, history, this_cost, this_badness, this_history, other_cost, other_badness, other_histories[team]))
-    teams.sort(key=lambda x: (x[3], x[6]), reverse=True)
 
-    if color:
-        CYAN = "\033[1;36m"
-        BLUE = "\033[0;34m"
-        GREEN = "\033[32m"
-        NORMAL = "\033[0m"
-        BOLD_CYAN = "\033[1;36m"
-        BOLD_YELLOW = "\033[1;33m"
-        BOLD_WHITE = "\033[1;37m"
-    else:
-        CYAN = BOLD_CYAN = BLUE = GREEN = BOLD_YELLOW = NORMAL = BOLD_WHITE = ""
+    if not quiet:
+        teams.sort(key=lambda x: (x[3], x[6]), reverse=True)
 
-    def history_string(base, original, changed):
-        strings = []
-        for a, b in zip(original, changed):
-            if a != b:
-                strings.append(GREEN + str(b) + base)
-            else:
-                strings.append(str(b))
-        return base + ",".join(strings) + NORMAL
+        if color:
+            BLUE = "\033[0;34m"
+            GREEN = "\033[32m"
+            NORMAL = "\033[0m"
+            BOLD_CYAN = "\033[1;36m"
+            BOLD_YELLOW = "\033[1;33m"
+        else:
+            BOLD_CYAN = BLUE = GREEN = BOLD_YELLOW = NORMAL = ""
 
-    print(BOLD_CYAN + "             team         ours            original" + NORMAL)
+        def history_string(base, original, changed):
+            strings = []
+            for a, b in zip(original, changed):
+                if a != b:
+                    strings.append(GREEN + str(b) + base)
+                else:
+                    strings.append(str(b))
+            return base + ",".join(strings) + NORMAL
 
-    for team, original_history, this_cost, this_badness, this_history, other_cost, other_badness, other_history in teams:
-        this_base = BLUE if this_badness == 0 else BOLD_YELLOW if this_badness > other_badness else NORMAL
-        other_base = BLUE if other_badness == 0 else BOLD_YELLOW if other_badness > this_badness else NORMAL
-        cost_format = "2d" if isinstance(this_cost, int) else "4.2f"
-        this_cost_str = ("{c}{cost:>" + cost_format + "}{n}").format(cost=this_cost, c=this_base, n=NORMAL)
-        other_cost_str = ("{c}{cost:>" + cost_format + "}{n}").format(cost=other_cost, c=other_base, n=NORMAL)
-        this_badness_str = "{c}({bad:>2d}){n}".format(bad=this_badness, c=this_base, n=NORMAL)
-        other_badness_str = "{c}({bad:>2d}){n}".format(bad=other_badness, c=other_base, n=NORMAL)
-        this_history_str = history_string(this_base, original_history, this_history)
-        other_history_str = history_string(other_base, original_history, other_history)
+        print(BOLD_CYAN + "             team         ours            original" + NORMAL)
 
-        print("{team:>17s}: {cost1:>2s} {bad1:>2s} {hist1:7s}   {cost2:>2s} {bad2:>2s} {hist2:7s}".format(
-            team=team[:17], bad1=this_badness_str, bad2=other_badness_str,
-            cost1=this_cost_str, cost2=other_cost_str,
-            hist1=this_history_str, hist2=other_history_str,
-        ))
+        for team, original_history, this_cost, this_badness, this_history, other_cost, other_badness, other_history in teams:
+            this_base = BLUE if this_badness == 0 else BOLD_YELLOW if this_badness > other_badness else NORMAL
+            other_base = BLUE if other_badness == 0 else BOLD_YELLOW if other_badness > this_badness else NORMAL
+            cost_format = "2d" if isinstance(this_cost, int) else "4.2f"
+            this_cost_str = ("{c}{cost:>" + cost_format + "}{n}").format(cost=this_cost, c=this_base, n=NORMAL)
+            other_cost_str = ("{c}{cost:>" + cost_format + "}{n}").format(cost=other_cost, c=other_base, n=NORMAL)
+            this_badness_str = "{c}({bad:>2d}){n}".format(bad=this_badness, c=this_base, n=NORMAL)
+            other_badness_str = "{c}({bad:>2d}){n}".format(bad=other_badness, c=other_base, n=NORMAL)
+            this_history_str = history_string(this_base, original_history, this_history)
+            other_history_str = history_string(other_base, original_history, other_history)
 
-    print()
-    print(CYAN + "        our total cost:" + BOLD_WHITE, this_total_cost, NORMAL)
-    print(CYAN + "   original total cost:" + BOLD_WHITE, other_total_cost, NORMAL)
-    print(CYAN + "     our total badness:" + BOLD_WHITE, this_total_badness, NORMAL)
-    print(CYAN + "original total badness:" + BOLD_WHITE, other_total_badness, NORMAL)
+            print("{team:>17s}: {cost1:>2s} {bad1:>2s} {hist1:7s}   {cost2:>2s} {bad2:>2s} {hist2:7s}".format(
+                team=team[:17], bad1=this_badness_str, bad2=other_badness_str,
+                cost1=this_cost_str, cost2=other_cost_str,
+                hist1=this_history_str, hist2=other_history_str,
+            ))
+
+    return this_total_cost, other_total_cost, this_total_badness, other_total_badness
 
 def show_original_rooms(data, filename, color=False):
     properties = {team: (points, history) for team, points, history in data}
@@ -254,13 +253,15 @@ COST_FUNCTIONS = {
     "squared": cost_squared,
     "vanschelven": cost_vanschelven,
     "entropy": cost_entropy,
+    "entropysq": cost_entropy_squared,
 }
 
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("tournament")
-    parser.add_argument("round", type=int, nargs='?',    default=None)
+    parser.add_argument("round", type=int, nargs='?', default=None)
+    parser.add_argument("-q", "--quiet", help="Print only the final costs", action="store_true", default=False)
     parser.add_argument("-C", "--compare-file")
     parser.add_argument("-D", "--actual-draw")
     parser.add_argument("-m", "--no-color", dest="color", action="store_false", default=True)
@@ -282,10 +283,26 @@ if __name__ == "__main__":
 
     data = read_input_file(filename)
     rooms = generate_draw(data, COST_FUNCTIONS[args.cost_method])
-    _print_heading("Our draw:", args.color)
-    show_rooms(rooms, args.color)
-    if actualdrawfile:
-        _print_heading("\033[1;36mOriginal draw:\033[0m", args.color)
-        show_original_rooms(data, actualdrawfile, args.color)
+
+    if not args.quiet:
+        _print_heading("Our draw:", args.color)
+        show_rooms(rooms, args.color)
+        if actualdrawfile:
+            _print_heading("\033[1;36mOriginal draw:\033[0m", args.color)
+            show_original_rooms(data, actualdrawfile, args.color)
+
     if comparefile:
-        compare_badness(rooms, comparefile, COST_FUNCTIONS[args.cost_method], args.color)
+        this_cost, other_cost, this_badness, other_badness = compare_badness(rooms, comparefile, COST_FUNCTIONS[args.cost_method], args.color, args.quiet)
+
+    if args.color:
+        CYAN = "\033[1;36m"
+        BOLD_WHITE = "\033[1;37m"
+        NORMAL = "\033[0m"
+    else:
+        CYAN = BOLD_WHITE = NORMAL = ""
+
+    print()
+    print(CYAN + "        our total cost:" + BOLD_WHITE, this_cost, NORMAL)
+    print(CYAN + "   original total cost:" + BOLD_WHITE, other_cost, NORMAL)
+    print(CYAN + "     our total badness:" + BOLD_WHITE, this_badness, NORMAL)
+    print(CYAN + "original total badness:" + BOLD_WHITE, other_badness, NORMAL)
