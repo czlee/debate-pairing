@@ -73,7 +73,7 @@ def cost_simple(pos, profile):
 def cost_squared(pos, profile):
     return (profile[pos] - min(profile)) ** 2
 
-def cost_tabbie(pos, profile):
+def cost_vanschelven(pos, profile):
     profile = profile.copy()
     profile[pos] += 1
     return get_position_badness(profile)
@@ -175,13 +175,13 @@ def compare_badness(rooms, other_filename, cost_fn, color=False):
             this_history = history.copy()
             this_history[pos] += 1
             this_cost = cost_fn(pos, history)
-            this_badness = cost_tabbie(pos, history)
+            this_badness = cost_vanschelven(pos, history)
             this_total_cost += this_cost
             this_total_badness += this_badness
 
             other_pos = [x != y for x, y in zip(history, other_histories[team])].index(True)
             other_cost = cost_fn(other_pos, history)
-            other_badness = cost_tabbie(other_pos, history)
+            other_badness = cost_vanschelven(other_pos, history)
             other_total_cost += other_cost
             other_total_badness += other_badness
 
@@ -252,7 +252,7 @@ def _print_heading(message, color=False):
 COST_FUNCTIONS = {
     "simple": cost_simple,
     "squared": cost_squared,
-    "tabbie": cost_tabbie,
+    "vanschelven": cost_vanschelven,
     "entropy": cost_entropy,
 }
 
@@ -264,7 +264,7 @@ if __name__ == "__main__":
     parser.add_argument("-C", "--compare-file")
     parser.add_argument("-D", "--actual-draw")
     parser.add_argument("-m", "--no-color", dest="color", action="store_false", default=True)
-    parser.add_argument("-c", "--cost-method", choices=COST_FUNCTIONS.keys(), default="tabbie")
+    parser.add_argument("-c", "--cost-method", choices=COST_FUNCTIONS.keys(), default="vanschelven")
     args = parser.parse_args()
 
     import os.path
