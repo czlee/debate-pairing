@@ -12,7 +12,8 @@ import random
 from collections import Counter
 from itertools import chain, repeat
 from math import log2
-from badness import get_position_badness
+from statistics import pvariance
+from badness import get_vanschelven_position_badness
 
 munkres.DISALLOWED_PRINTVAL = "-"
 DISALLOWED = munkres.DISALLOWED
@@ -67,6 +68,11 @@ def define_rooms(points):
 
     return rooms
 
+def profile_after(pos, profile):
+    new_profile = profile.copy()
+    new_profile[pos] += 1
+    return new_profile
+
 def cost_simple(pos, profile):
     return profile[pos] - min(profile)
 
@@ -74,19 +80,31 @@ def cost_squared(pos, profile):
     return (profile[pos] - min(profile)) ** 2
 
 def cost_vanschelven(pos, profile):
-    profile = profile.copy()
-    profile[pos] += 1
-    return get_position_badness(profile)
+    return get_vanschelven_position_badness(profile_after(pos, profile))
 
 def cost_entropy(pos, profile):
-    profile = profile.copy()
-    profile[pos] += 1
+    profile = profile_after(pos, profile)
     probs = [p/sum(profile) for p in profile]
     selfinfo = [0 if p == 0 else -p*log2(p) for p in probs]
     return 2 - sum(selfinfo)
 
 def cost_entropy_squared(pos, profile):
     return cost_entropy(pos, profile) ** 2
+
+def cost_pvariance(pos, profile):
+    return pvariance(profile_after(pos, profile))
+
+def cost_pvariance_squared(pos, profile):
+    return cost_pvariance(pos, profile) ** 2
+
+def cost_adjusted_pvariance(pos, profile):
+    profile = profile_after(pos, profile)
+    n = sum(profile)
+    best = [n // 4] * (4 - n % 4) + [n // 4 + 1] * (n % 4)
+    return pvariance(profile) - pvariance(best)
+
+def cost_adjusted_pvariance_squared(pos, profile):
+    return cost_adjusted_pvariance(pos, profile) ** 2
 
 def generate_cost_matrix(data, cost_fn):
     """Returns a cost matrix for the tournament.
@@ -254,6 +272,10 @@ COST_FUNCTIONS = {
     "vanschelven": cost_vanschelven,
     "entropy": cost_entropy,
     "entropysq": cost_entropy_squared,
+    "pvar": cost_pvariance,
+    "pvarsq": cost_pvariance_squared,
+    "adjpvar": cost_adjusted_pvariance,
+    "adjpvarsq": cost_adjusted_pvariance_squared,
 }
 
 

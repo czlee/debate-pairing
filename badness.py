@@ -1,11 +1,11 @@
 """Just here to avoid cluttering other files.
 The definition is taken directly from Tabbie2, to allow direct comparisons."""
 
-def get_position_badness(history):
-    return POSITION_BADNESS[tuple(sorted(history))]
+def get_vanschelven_position_badness(history):
+    return VANSCHELVEN_POSITION_BADNESS[tuple(sorted(history))]
 
 
-POSITION_BADNESS = {
+VANSCHELVEN_POSITION_BADNESS = {
     (0, 0, 0, 0): 0,
     (0, 0, 0, 1): 0,
     (0, 0, 0, 2): 4,
