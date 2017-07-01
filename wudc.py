@@ -76,9 +76,6 @@ def profile_after(pos, profile):
 def cost_simple(pos, profile):
     return profile[pos] - min(profile)
 
-def cost_squared(pos, profile):
-    return (profile[pos] - min(profile)) ** 2
-
 def cost_vanschelven(pos, profile):
     return get_vanschelven_position_badness(profile_after(pos, profile))
 
@@ -88,23 +85,14 @@ def cost_entropy(pos, profile):
     selfinfo = [0 if p == 0 else -p*log2(p) for p in probs]
     return 2 - sum(selfinfo)
 
-def cost_entropy_squared(pos, profile):
-    return cost_entropy(pos, profile) ** 2
-
 def cost_pvariance(pos, profile):
     return pvariance(profile_after(pos, profile))
-
-def cost_pvariance_squared(pos, profile):
-    return cost_pvariance(pos, profile) ** 2
 
 def cost_adjusted_pvariance(pos, profile):
     profile = profile_after(pos, profile)
     n = sum(profile)
     best = [n // 4] * (4 - n % 4) + [n // 4 + 1] * (n % 4)
     return pvariance(profile) - pvariance(best)
-
-def cost_adjusted_pvariance_squared(pos, profile):
-    return cost_adjusted_pvariance(pos, profile) ** 2
 
 def generate_cost_matrix(data, cost_fn):
     """Returns a cost matrix for the tournament.
@@ -268,14 +256,10 @@ def _print_heading(message, color=False):
 
 COST_FUNCTIONS = {
     "simple": cost_simple,
-    "squared": cost_squared,
     "vanschelven": cost_vanschelven,
     "entropy": cost_entropy,
-    "entropysq": cost_entropy_squared,
     "pvar": cost_pvariance,
-    "pvarsq": cost_pvariance_squared,
     "adjpvar": cost_adjusted_pvariance,
-    "adjpvarsq": cost_adjusted_pvariance_squared,
 }
 
 
@@ -288,6 +272,10 @@ if __name__ == "__main__":
     parser.add_argument("-D", "--actual-draw")
     parser.add_argument("-m", "--no-color", dest="color", action="store_false", default=True)
     parser.add_argument("-c", "--cost-method", choices=COST_FUNCTIONS.keys(), default="vanschelven")
+    parser.add_argument("-e", "--exponent", type=float, default=None,
+        help=("If specified, the cost function is raised to this exponent. For cost methods pvar and "
+              "adjpvar, the exponent refers to the standard deviation. So '-c simple' is equivalent "
+              "to '-c simple -e 1', but '-c pvar' is equivalent to '-c pvar -e 2'."))
     args = parser.parse_args()
 
     import os.path
@@ -303,8 +291,17 @@ if __name__ == "__main__":
         print("Either the first argument must be a file name, or the second argument must be a round number.")
         exit()
 
+    if args.exponent:
+        exp = float(args.exponent)
+        if args.cost_method in ('pvar', 'adjpvar'):
+            exp /= 2
+        def cost_fn(pos, profile):
+            return COST_FUNCTIONS[args.cost_method](pos, profile) ** exp
+    else:
+        cost_fn = COST_FUNCTIONS[args.cost_method]
+
     data = read_input_file(filename)
-    rooms = generate_draw(data, COST_FUNCTIONS[args.cost_method])
+    rooms = generate_draw(data, cost_fn)
 
     if not args.quiet:
         _print_heading("Our draw:", args.color)
@@ -314,7 +311,7 @@ if __name__ == "__main__":
             show_original_rooms(data, actualdrawfile, args.color)
 
     if comparefile:
-        this_cost, other_cost, this_badness, other_badness = compare_badness(rooms, comparefile, COST_FUNCTIONS[args.cost_method], args.color, args.quiet)
+        this_cost, other_cost, this_badness, other_badness = compare_badness(rooms, comparefile, cost_fn, args.color, args.quiet)
 
     if args.color:
         CYAN = "\033[1;36m"
