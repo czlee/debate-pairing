@@ -273,9 +273,7 @@ if __name__ == "__main__":
     parser.add_argument("-m", "--no-color", dest="color", action="store_false", default=True)
     parser.add_argument("-c", "--cost-method", choices=COST_FUNCTIONS.keys(), default="vanschelven")
     parser.add_argument("-e", "--exponent", type=float, default=None,
-        help=("If specified, the cost function is raised to this exponent. For cost methods pvar and "
-              "adjpvar, the exponent refers to the standard deviation. So '-c simple' is equivalent "
-              "to '-c simple -e 1', but '-c pvar' is equivalent to '-c pvar -e 2'."))
+        help=("If specified, the cost function is raised to this exponent."))
     args = parser.parse_args()
 
     import os.path
@@ -293,8 +291,6 @@ if __name__ == "__main__":
 
     if args.exponent:
         exp = float(args.exponent)
-        if args.cost_method in ('pvar', 'adjpvar'):
-            exp /= 2
         def cost_fn(pos, profile):
             return COST_FUNCTIONS[args.cost_method](pos, profile) ** exp
     else:
