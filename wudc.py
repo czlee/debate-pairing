@@ -86,6 +86,12 @@ def cost_entropy(pos, profile):
     selfinfo = [0 if p == 0 else -p*log2(p) for p in probs]
     return (2 - sum(selfinfo)) * n
 
+def cost_collision_entropy(pos, profile):
+    profile = profile_after(pos, profile)
+    n = sum(profile)
+    probs = [p/n for p in profile]
+    return (2 + log2(sum([p ** 2 for p in probs]))) * n
+
 def cost_pvariance(pos, profile):
     return pvariance(profile_after(pos, profile))
 
@@ -259,6 +265,7 @@ COST_FUNCTIONS = {
     "simple": cost_simple,
     "vanschelven": cost_vanschelven,
     "entropy": cost_entropy,
+    "collision": cost_collision_entropy,
     "pvar": cost_pvariance,
     "adjpvar": cost_adjusted_pvariance,
 }
